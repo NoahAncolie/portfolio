@@ -1,0 +1,22 @@
+.lg-hidden {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .lg-hidden {
+        width: 50px;
+        display: block;
+    }
+
+    .sm-hidden {
+        display: none;
+        overflow: hidden;
+        height: 0;
+        width: 0;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}

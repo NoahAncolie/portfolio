@@ -1,14 +1,17 @@
 import { mdiMenu } from "@mdi/js";
 import Icon from "@mdi/react";
-import { Box, Typography } from "@mui/material";
+import { Box, List, ListItemButton, Typography } from "@mui/material";
 import React from "react";
 import { Navlink } from "./navlink";
+import "./index.css";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {}
 
 interface NavbarState {
   square_props?: SquareProps;
   nav_links: LinkData[];
+  phone_menu_is_open: boolean;
 }
 
 export class Navbar extends React.Component<NavbarProps, NavbarState> {
@@ -28,6 +31,7 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
           is_active: this.isLinkActive("/projets"),
         },
       ],
+      phone_menu_is_open: false,
     };
     this.moveSelection = this.moveSelection.bind(this);
     this.removeSelection = this.removeSelection.bind(this);
@@ -65,74 +69,164 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
     });
   }
 
+  togglePhoneMenu() {
+    this.setState({
+      phone_menu_is_open: !this.state.phone_menu_is_open,
+    });
+  }
+
   render() {
     return (
-      <nav>
+      <>
+        <nav>
+          <Box
+            sx={{
+              width: "100vw",
+              height: 80,
+              backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
+              position: "fixed",
+              top: 0,
+              left: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              borderBottom: 1,
+              borderColor: "text.secondary",
+              backgroundColor: "text.disabled",
+              zIndex: 50,
+            }}
+          >
+            <Box sx={{ px: 4 }}>
+              <Typography variant="subtitle1">adrienbenaceur.fr</Typography>
+            </Box>
+            {this.state.square_props ? (
+              <Box
+                sx={{
+                  position: "fixed",
+                  width: this.state.square_props.width,
+                  height: this.state.square_props.height,
+                  top: `${this.state.square_props.y}px`,
+                  left: `${this.state.square_props.x}px`,
+                  transition: "0.15s ease-in-out",
+                  borderRadius: 1,
+                  backgroundColor: "text.secondary",
+                  border: 1,
+                  borderColor: "primary.main",
+                }}
+              />
+            ) : (
+              <></>
+            )}
+            <Box>
+              <Box
+                className="lg-hidden"
+                sx={{
+                  color: "text.primary",
+                  px: 2,
+                  "&:hover": { color: "secondary.main" },
+                  transition: "0.15s ease-in-out",
+                }}
+                onClick={() => {
+                  this.togglePhoneMenu();
+                }}
+              >
+                <Icon path={mdiMenu} />
+              </Box>
+              <Box
+                className="sm-hidden"
+                sx={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  px: 2,
+                }}
+              >
+                {this.state.nav_links.map((link_data, index) => (
+                  <Navlink
+                    key={index}
+                    moveSelection={this.moveSelection}
+                    removeSelection={this.removeSelection}
+                    link_data={link_data}
+                    reload_links={this.reloadLinks}
+                  />
+                ))}
+              </Box>
+            </Box>
+          </Box>
+        </nav>
         <Box
           sx={{
             width: "100vw",
-            height: 80,
-            backdropFilter: "blur(8px)",
-            WebkitBackdropFilter: "blur(8px)",
+            height: "100vh",
+            backgroundColor: "primary.main",
             position: "fixed",
             top: 0,
             left: 0,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            borderBottom: 1,
-            borderColor: "text.secondary",
-            backgroundColor: "text.disabled",
-            zIndex: 50,
+            zIndex: 10,
+            py: 10,
+            transform: this.state.phone_menu_is_open
+              ? "translateY(0%)"
+              : "translateY(-100%)"
           }}
         >
-          <Box sx={{ px: 4 }}>
-            <Typography variant="subtitle1">adrienbenaceur.fr</Typography>
-          </Box>
-          <Box
-            className="lg-hidden"
-            sx={{color: "pri"}}
-          >
-            <Icon path={mdiMenu} />
-          </Box>
-          {this.state.square_props ? (
-            <Box
-              sx={{
-                position: "fixed",
-                width: this.state.square_props.width,
-                height: this.state.square_props.height,
-                top: `${this.state.square_props.y}px`,
-                left: `${this.state.square_props.x}px`,
-                transition: "0.15s ease-in-out",
-                borderRadius: 1,
-                backgroundColor: "text.secondary",
-                border: 1,
-                borderColor: "primary.main",
+          <List sx={{ px: 2 }}>
+            <Link
+              to="/"
+              onClick={() => {
+                this.togglePhoneMenu();
               }}
-            />
-          ) : (
-            <></>
-          )}
-          <Box
-            className="sm-hidden"
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              px: 2,
-            }}
-          >
-            {this.state.nav_links.map((link_data, index) => (
-              <Navlink
-                key={index}
-                moveSelection={this.moveSelection}
-                removeSelection={this.removeSelection}
-                link_data={link_data}
-                reload_links={this.reloadLinks}
-              />
-            ))}
-          </Box>
+            >
+              <ListItemButton
+                sx={{
+                  color: "text.primary",
+                  py: 2,
+                  my: 2,
+                  "&:hover": { backgroundColor: "text.secondary" },
+                  borderRadius: 1,
+                }}
+              >
+                Accueil
+              </ListItemButton>
+            </Link>
+            <Link
+              to="/competences"
+              onClick={() => {
+                this.togglePhoneMenu();
+              }}
+            >
+              <ListItemButton
+                sx={{
+                  color: "text.primary",
+                  py: 2,
+                  my: 2,
+                  "&:hover": { backgroundColor: "text.secondary" },
+                  borderRadius: 1,
+                }}
+              >
+                Compétences
+              </ListItemButton>
+            </Link>
+            <Link
+              to="/projets"
+              onClick={() => {
+                this.togglePhoneMenu();
+              }}
+            >
+              <ListItemButton
+                sx={{
+                  color: "text.primary",
+                  py: 2,
+                  my: 2,
+                  "&:hover": { backgroundColor: "text.secondary" },
+                  borderRadius: 1,
+                }}
+              >
+                Projets
+              </ListItemButton>
+            </Link>
+          </List>
         </Box>
-      </nav>
+      </>
     );
   }
 }
