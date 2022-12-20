@@ -1,3 +1,5 @@
+import { mdiMenu } from "@mdi/js";
+import Icon from "@mdi/react";
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import { Navlink } from "./navlink";
@@ -87,6 +89,12 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
           <Box sx={{ px: 4 }}>
             <Typography variant="subtitle1">adrienbenaceur.fr</Typography>
           </Box>
+          <Box
+            className="lg-hidden"
+            sx={{color: "pri"}}
+          >
+            <Icon path={mdiMenu} />
+          </Box>
           {this.state.square_props ? (
             <Box
               sx={{
@@ -106,6 +114,7 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
             <></>
           )}
           <Box
+            className="sm-hidden"
             sx={{
               display: "flex",
               justifyContent: "flex-end",
