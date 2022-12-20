@@ -25,11 +25,6 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
           name: "projets",
           is_active: this.isLinkActive("/projets"),
         },
-        {
-          link: "/contact",
-          name: "contact",
-          is_active: this.isLinkActive("/contact"),
-        },
       ],
     };
     this.moveSelection = this.moveSelection.bind(this);
