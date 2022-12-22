@@ -1,0 +1,46 @@
+.adrienbenaceur {
+    animation: 1.5s ease-in-out bonjour;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+@keyframes bonjour {
+    0% {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+
+    99% {
+        opacity: 0;
+    }
+    100% {
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+    }
+}
+
+.anime-name {
+    animation: 1s cubic-bezier(.4,.68,.4,.68) goUp;
+}
+
+.anime-fr {
+    animation: 1s cubic-bezier(.4,.68,.4,.68) goLeft;
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes goLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+}

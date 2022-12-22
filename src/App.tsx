@@ -1,10 +1,12 @@
 import { mdiThemeLightDark } from "@mdi/js";
 import Icon from "@mdi/react";
+import { Typography } from "@mui/material";
 import { orange } from "@mui/material/colors";
 import { createTheme, Theme, ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
+import { text } from "stream/consumers";
 import "./App.css";
 import { Footer } from "./components/footer/footer";
 import { Main } from "./components/main/main";
@@ -110,6 +112,28 @@ export class App extends React.Component<AppProps, AppState> {
             }}
           >
             <Icon path={mdiThemeLightDark} />
+          </Box>
+          <Box
+            sx={{
+              backgroundColor: "primary.main",
+              zIndex: 100,
+              position: "fixed",
+              top: 0,
+              left: 0,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            className="adrienbenaceur"
+          >
+            <Box display="flex" sx={{overflow: 'hidden'}}>
+              <Typography variant="h1" color="secondary" className="anime-name">
+                adrienbenaceur
+              </Typography>
+              <Typography variant="h1" sx={{ color: "text.primary" }} className="anime-fr">
+                .fr
+              </Typography>
+            </Box>
           </Box>
         </ThemeProvider>
       </Box>
