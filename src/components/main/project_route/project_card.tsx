@@ -89,7 +89,7 @@ export class ProjectCard extends React.Component<
             <Grid item lg={8}>
               <img
                 src={this.props.project_card_data.image_url}
-                alt="première page de l'portfolio adrienbenaceur.fr"
+                alt="screenshot d'un ancien projet"
                 style={{ display: "block", width: "100%" }}
               />
             </Grid>
