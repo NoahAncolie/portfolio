@@ -28,10 +28,3 @@
 .top {
   transform: scale(1.4);
 }
-
-.checkbox {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  accent-color: #FF1644;
-}
