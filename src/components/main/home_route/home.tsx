@@ -13,9 +13,18 @@ import {
   mdiReact,
 } from "@mdi/js";
 import Icon from "@mdi/react";
-import { Box, Grid, List, ListItem, Tooltip, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  List,
+  ListItem,
+  Tooltip,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import profile from "../../../assets/images/photo.png";
+import CV from "../../../assets/images/adrienbenaceur.png";
 import "./index.css";
 
 interface HomeProps {}
@@ -168,6 +177,30 @@ export class Home extends React.Component<HomeProps, HomeState> {
               </Box>
             </Tooltip>
           </Box>
+        </Grid>
+        <Grid item lg={4} sm={0} md={0}></Grid>
+        <Grid
+          item
+          lg={4}
+          sm={12}
+          md={12}
+          sx={{
+            justifyItems: "baseline",
+            display: "flex",
+            justifyContent: "flex-end",
+            flexDirection: "column",
+          }}
+        >
+          <a href={CV} download>
+            <Button
+              variant="outlined"
+              color="secondary"
+              sx={{ my: 0, height: "fit-content" }}
+              fullWidth
+            >
+              Télécharger le CV
+            </Button>
+          </a>
         </Grid>
       </Grid>
     );
