@@ -1,10 +1,10 @@
 import { mdiMenu } from "@mdi/js";
 import Icon from "@mdi/react";
-import { Box, List, ListItemButton, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import { Navlink } from "./navlink";
 import "./index.css";
-import { Link } from "react-router-dom";
+import { Navlink } from "./navlink";
+import { PhoneNav } from "./phone_nav";
 
 interface NavbarProps {}
 
@@ -36,6 +36,7 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
     this.moveSelection = this.moveSelection.bind(this);
     this.removeSelection = this.removeSelection.bind(this);
     this.reloadLinks = this.reloadLinks.bind(this);
+    this.togglePhoneMenu = this.togglePhoneMenu.bind(this);
   }
 
   moveSelection(square_props: SquareProps) {
@@ -166,65 +167,14 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
             py: 10,
             transform: this.state.phone_menu_is_open
               ? "translateY(0%)"
-              : "translateY(-100%)"
+              : "translateY(-100%)",
           }}
         >
-          <List sx={{ px: 2 }}>
-            <Link
-              to="/"
-              onClick={() => {
-                this.togglePhoneMenu();
-              }}
-            >
-              <ListItemButton
-                sx={{
-                  color: "text.primary",
-                  py: 2,
-                  my: 2,
-                  "&:hover": { backgroundColor: "text.secondary" },
-                  borderRadius: 1,
-                }}
-              >
-                Accueil
-              </ListItemButton>
-            </Link>
-            <Link
-              to="/competences"
-              onClick={() => {
-                this.togglePhoneMenu();
-              }}
-            >
-              <ListItemButton
-                sx={{
-                  color: "text.primary",
-                  py: 2,
-                  my: 2,
-                  "&:hover": { backgroundColor: "text.secondary" },
-                  borderRadius: 1,
-                }}
-              >
-                Compétences
-              </ListItemButton>
-            </Link>
-            <Link
-              to="/projets"
-              onClick={() => {
-                this.togglePhoneMenu();
-              }}
-            >
-              <ListItemButton
-                sx={{
-                  color: "text.primary",
-                  py: 2,
-                  my: 2,
-                  "&:hover": { backgroundColor: "text.secondary" },
-                  borderRadius: 1,
-                }}
-              >
-                Projets
-              </ListItemButton>
-            </Link>
-          </List>
+          <PhoneNav
+            togglePhoneMenu={() => {
+              this.togglePhoneMenu();
+            }}
+          />
         </Box>
       </>
     );

@@ -189,6 +189,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
             display: "flex",
             justifyContent: "flex-end",
             flexDirection: "column",
+            mb: 2
           }}
         >
           <a href={CV} download>

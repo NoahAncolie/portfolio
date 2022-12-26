@@ -35,3 +35,9 @@
   left: 5px;
   accent-color: #FF1644;
 }
+
+@media screen and (max-width: 1200px) {
+    .hidden-sm {
+      display: none;
+    }
+}

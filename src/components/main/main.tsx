@@ -5,7 +5,7 @@ import {
   mdiSpotify,
   mdiTwitter,
 } from "@mdi/js";
-import { Box, Grid, List, Typography } from "@mui/material";
+import { Box, Grid, List } from "@mui/material";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { AnnexeLink } from "./annexe_link";
@@ -33,26 +33,15 @@ export class Main extends React.Component<MainProps, MainState> {
         }}
       >
         <Grid container spacing={0}>
-          <Grid item lg={3}></Grid>
           <Grid
             item
-            lg={6}
-            sx={{
-              pt: 2,
-              px: 2,
-              overflow: "auto",
-              mt: 10,
-            }}
+            lg={2.6}
+            md={12}
+            sm={12}
+            className="hidden-sm"
+            sx={{ p: 2, mt: 10, top: 0 }}
           >
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/competences" element={<Skills />} />
-              <Route path="/projets" element={<Project />} />
-            </Routes>
-          </Grid>
-          <Grid item lg={3} sm={12} sx={{ p: 2, mt: 10, top: 0 }}>
             <Box sx={{ position: "sticky", top: 85 }}>
-              <Typography variant="h5">Annexe</Typography>
               <List className="link-list">
                 <AnnexeLink
                   link_icon={mdiGithub}
@@ -86,6 +75,23 @@ export class Main extends React.Component<MainProps, MainState> {
               </List>
             </Box>
           </Grid>
+          <Grid
+            item
+            lg={6}
+            sx={{
+              pt: 2,
+              px: 2,
+              overflow: "auto",
+              mt: 10,
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/competences" element={<Skills />} />
+              <Route path="/projets" element={<Project />} />
+            </Routes>
+          </Grid>
+          <Grid item lg={3.4}></Grid>
         </Grid>
       </Box>
     );
