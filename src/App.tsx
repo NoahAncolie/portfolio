@@ -1,12 +1,11 @@
 import { mdiThemeLightDark } from "@mdi/js";
 import Icon from "@mdi/react";
 import { Typography } from "@mui/material";
-import { orange } from "@mui/material/colors";
+import { red } from "@mui/material/colors";
 import { createTheme, Theme, ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { text } from "stream/consumers";
 import "./App.css";
 import { Footer } from "./components/footer/footer";
 import { Main } from "./components/main/main";
@@ -35,7 +34,7 @@ export class App extends React.Component<AppProps, AppState> {
         primary: {
           main: "#eceff1",
         },
-        secondary: orange,
+        secondary: red,
         text: {
           primary: "#263238",
           secondary: "#2632382c",
@@ -51,7 +50,7 @@ export class App extends React.Component<AppProps, AppState> {
         primary: {
           main: "#263238",
         },
-        secondary: orange,
+        secondary: red,
         text: {
           primary: "#ffffff",
           secondary: "#ffffff2c",

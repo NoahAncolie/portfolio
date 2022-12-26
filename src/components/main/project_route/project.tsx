@@ -34,7 +34,7 @@ export class Project extends React.Component<ProjectProps, ProjectState> {
           image_url: projet_1,
           project_url: "https://adrienbenaceur.vercel.app",
           technologies: [technology_react, technology_sass],
-          text: "Septembre 2022\nAncien portfolio avec réalisation de ma propre librairie css d'effets et de style",
+          text: "Septembre 2022\nAncien portfolio avec réalisation de ma propre librairie css d'effets et de style.",
         },
         {
           project_name: "Colibri",

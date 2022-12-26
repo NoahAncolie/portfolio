@@ -1,6 +1,5 @@
 import Icon from "@mdi/react";
 import { Box, Button, Grid, Link, Tooltip, Typography } from "@mui/material";
-import { relative } from "path";
 import React from "react";
 import { ProjectCardData } from "./project";
 
@@ -62,29 +61,25 @@ export class ProjectCard extends React.Component<
                 </Button>
               </Link>
             </Box>
-            <Box sx={{ mb: 1 }}>
+            <Box sx={{ mb: 1, display: "flex" }}>
               {this.props.project_card_data.technologies.map(
                 (technology, index) => (
-                  <Tooltip title={technology.title}>
-                    <Icon
-                      path={technology.svg}
-                      key={index}
-                      style={{ width: 30 }}
-                    />
-                  </Tooltip>
+                  <Box key={index}>
+                    <Tooltip title={technology.title}>
+                      <Icon path={technology.svg} style={{ width: 30 }} />
+                    </Tooltip>
+                  </Box>
                 )
               )}
             </Box>
           </Box>
           <Grid container>
             <Grid item lg={4} sx={{ px: 1 }}>
-              <Typography>
-                {this.props.project_card_data.text
-                  .split("\n")
-                  .map((text, index) => (
-                    <p key={index}>{text}</p>
-                  ))}
-              </Typography>
+              {this.props.project_card_data.text
+                .split("\n")
+                .map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
             </Grid>
             <Grid item lg={8}>
               <img
