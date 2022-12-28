@@ -1,5 +1,4 @@
 import {
-  mdiAirplaneMarker,
   mdiAndroid,
   mdiApi,
   mdiDocker,
@@ -9,8 +8,8 @@ import {
   mdiLanguagePython,
   mdiLanguageRuby,
   mdiLanguageRubyOnRails,
-  mdiNodejs,
-  mdiReact,
+  mdiMapMarker, mdiNodejs,
+  mdiReact
 } from "@mdi/js";
 import Icon from "@mdi/react";
 import {
@@ -20,11 +19,11 @@ import {
   List,
   ListItem,
   Tooltip,
-  Typography,
+  Typography
 } from "@mui/material";
 import React from "react";
-import profile from "../../../assets/images/photo.png";
 import CV from "../../../assets/images/adrienbenaceur.png";
+import profile from "../../../assets/images/photo.png";
 import "./index.css";
 
 interface HomeProps {}
@@ -89,8 +88,8 @@ export class Home extends React.Component<HomeProps, HomeState> {
               adrien.benaceur@protonmail.com
             </ListItem>
             <ListItem>
-              <Icon path={mdiAirplaneMarker} className="home-list-svg" />
-              La Réunion
+              <Icon path={mdiMapMarker} className="home-list-svg" />
+              France
             </ListItem>
           </List>
         </Grid>
