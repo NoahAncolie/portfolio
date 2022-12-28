@@ -126,10 +126,10 @@ export class App extends React.Component<AppProps, AppState> {
             className="adrienbenaceur"
           >
             <Box display="flex" sx={{overflow: 'hidden'}}>
-              <Typography variant="h1" color="secondary" className="anime-name">
+              <Typography variant="h1" sx={{ fontSize: "5.5vw"}} color="secondary" className="anime-name">
                 adrienbenaceur
               </Typography>
-              <Typography variant="h1" sx={{ color: "text.primary" }} className="anime-fr">
+              <Typography variant="h1" sx={{ color: "text.primary", fontSize: "5.5vw" }} className="anime-fr">
                 .fr
               </Typography>
             </Box>
