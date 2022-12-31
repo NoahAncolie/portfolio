@@ -5,25 +5,19 @@ import {
   mdiEmail,
   mdiLanguageC,
   mdiLanguageKotlin,
-  mdiLanguagePython,
   mdiLanguageRuby,
   mdiLanguageRubyOnRails,
-  mdiMapMarker, mdiNodejs,
-  mdiReact
+  mdiMapMarker,
+  mdiMaterialUi,
+  mdiNodejs,
+  mdiReact,
 } from "@mdi/js";
 import Icon from "@mdi/react";
-import {
-  Box,
-  Button,
-  Grid,
-  List,
-  ListItem,
-  Tooltip,
-  Typography
-} from "@mui/material";
+import { Box, Button, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
 import CV from "../../../assets/images/adrienbenaceur.png";
 import profile from "../../../assets/images/photo.png";
+import { Favourite } from "./favourite";
 import "./index.css";
 
 interface HomeProps {}
@@ -63,24 +57,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
             variant="h5"
             sx={{ textAlign: "justify", mb: 3, display: "flex" }}
           >
-            Développeur
-            <Box sx={{ position: "relative" }}>
-              <input
-                type="checkbox"
-                defaultChecked
-                className="bottom checkbox"
-              />
-              <input type="checkbox" defaultChecked className="top checkbox" />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: 30,
-                  height: 30,
-                }}
-              ></Box>
-            </Box>
+            Développeur Fullstack
           </Typography>
           <List>
             <ListItem>
@@ -89,7 +66,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
             </ListItem>
             <ListItem>
               <Icon path={mdiMapMarker} className="home-list-svg" />
-              France
+              Nantes - France
             </ListItem>
           </List>
         </Grid>
@@ -125,56 +102,24 @@ export class Home extends React.Component<HomeProps, HomeState> {
             }}
             className="stack-list"
           >
-            <Tooltip title="nodejs">
-              <Box>
-                <Icon path={mdiNodejs} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="React">
-              <Box>
-                <Icon path={mdiReact} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Rails">
-              <Box>
-                <Icon path={mdiLanguageRubyOnRails} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Ruby">
-              <Box>
-                <Icon path={mdiLanguageRuby} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Docker">
-              <Box>
-                <Icon path={mdiDocker} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Langage C">
-              <Box>
-                <Icon path={mdiLanguageC} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Python">
-              <Box>
-                <Icon path={mdiLanguagePython} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Restful API">
-              <Box>
-                <Icon path={mdiApi} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Kotlin">
-              <Box>
-                <Icon path={mdiLanguageKotlin} />
-              </Box>
-            </Tooltip>
-            <Tooltip title="Programmation Androïd">
-              <Box>
-                <Icon path={mdiAndroid} />
-              </Box>
-            </Tooltip>
+            {[
+              { fav_name: "Material UI", fav_icon: mdiMaterialUi },
+              { fav_name: "nodejs", fav_icon: mdiNodejs },
+              { fav_name: "React", fav_icon: mdiReact },
+              { fav_name: "Rails", fav_icon: mdiLanguageRubyOnRails },
+              { fav_name: "Ruby", fav_icon: mdiLanguageRuby },
+              { fav_name: "Langage C", fav_icon: mdiLanguageC },
+              { fav_name: "Kotlin", fav_icon: mdiLanguageKotlin },
+              { fav_name: "Programmation Androïd", fav_icon: mdiAndroid },
+              { fav_name: "Docker", fav_icon: mdiDocker },
+              { fav_name: "Restful API", fav_icon: mdiApi },
+            ].map((favourite, index) => (
+              <Favourite
+                fav_name={favourite.fav_name}
+                fav_icon={favourite.fav_icon}
+                key={index}
+              />
+            ))}
           </Box>
         </Grid>
         <Grid item lg={4} sm={0} md={0}></Grid>
@@ -188,7 +133,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
             display: "flex",
             justifyContent: "flex-end",
             flexDirection: "column",
-            mb: 2
+            mb: 2,
           }}
         >
           <a href={CV} download>

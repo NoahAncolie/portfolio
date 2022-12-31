@@ -81,7 +81,6 @@ export class Main extends React.Component<MainProps, MainState> {
             sx={{
               pt: 2,
               px: 2,
-              overflow: "auto",
               mt: 10,
             }}
           >

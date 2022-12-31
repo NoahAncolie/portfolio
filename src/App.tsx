@@ -1,7 +1,6 @@
 import { mdiThemeLightDark } from "@mdi/js";
 import Icon from "@mdi/react";
 import { Typography } from "@mui/material";
-import { red } from "@mui/material/colors";
 import { createTheme, Theme, ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import React from "react";
@@ -12,7 +11,9 @@ import { Main } from "./components/main/main";
 import { Navbar } from "./components/navbar/navbar";
 import { GetColorMode, SetColorMode } from "./functions/storage/local_storage";
 
-interface AppProps {}
+interface AppProps {
+  secondary : any
+}
 
 interface AppState {
   theme: Theme;
@@ -34,7 +35,7 @@ export class App extends React.Component<AppProps, AppState> {
         primary: {
           main: "#eceff1",
         },
-        secondary: red,
+        secondary: this.props.secondary,
         text: {
           primary: "#263238",
           secondary: "#2632382c",
@@ -50,7 +51,7 @@ export class App extends React.Component<AppProps, AppState> {
         primary: {
           main: "#263238",
         },
-        secondary: red,
+        secondary: this.props.secondary,
         text: {
           primary: "#ffffff",
           secondary: "#ffffff2c",

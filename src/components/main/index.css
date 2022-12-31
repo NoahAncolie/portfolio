@@ -29,13 +29,6 @@
   transform: scale(1.4);
 }
 
-.checkbox {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  accent-color: #FF1644;
-}
-
 @media screen and (max-width: 1200px) {
     .hidden-sm {
       display: none;
