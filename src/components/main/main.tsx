@@ -1,9 +1,9 @@
 import {
   mdiGithub,
+  mdiGitlab,
   mdiLaptop,
   mdiLinkedin,
   mdiSpotify,
-  mdiTwitter,
 } from "@mdi/js";
 import { Box, Grid, List } from "@mui/material";
 import React from "react";
@@ -50,6 +50,12 @@ export class Main extends React.Component<MainProps, MainState> {
                 />
 
                 <AnnexeLink
+                  link_icon={mdiGitlab}
+                  link_url="https://gitlab.com/AdrienBenaceur"
+                  link_name="Gitlab"
+                />
+
+                <AnnexeLink
                   link_icon={mdiLinkedin}
                   link_url="https://www.linkedin.com/in/adrien-benaceur-933570182/"
                   link_name="Linkedin"
@@ -59,12 +65,6 @@ export class Main extends React.Component<MainProps, MainState> {
                   link_icon={mdiSpotify}
                   link_url="https://open.spotify.com/user/adrien-f?si=08f3d6f7cb11455c"
                   link_name="Spotify"
-                />
-
-                <AnnexeLink
-                  link_icon={mdiTwitter}
-                  link_url="https://twitter.com/NAncolie"
-                  link_name="Twitter"
                 />
 
                 <AnnexeLink

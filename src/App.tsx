@@ -37,8 +37,8 @@ export class App extends React.Component<AppProps, AppState> {
         },
         secondary: this.props.secondary,
         text: {
-          primary: "#263238",
-          secondary: "#2632382c",
+          primary: "#191919",
+          secondary: "#1919192c",
           disabled: "#eceff1ab",
         },
       },
@@ -49,13 +49,13 @@ export class App extends React.Component<AppProps, AppState> {
     return createTheme({
       palette: {
         primary: {
-          main: "#263238",
+          main: "#191919",
         },
         secondary: this.props.secondary,
         text: {
           primary: "#ffffff",
           secondary: "#ffffff2c",
-          disabled: "#263238ab",
+          disabled: "#191919ab",
         },
       },
     });

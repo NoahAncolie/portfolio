@@ -33,7 +33,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
   render() {
     return (
       <Grid container spacing={5}>
-        <Grid item lg={4} md={6}>
+        <Grid item lg={4} md={4} sm={4}>
           <Box
             sx={{
               width: 1,

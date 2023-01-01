@@ -1,4 +1,10 @@
-import { mdiGithub, mdiLaptop, mdiLinkedin, mdiSpotify, mdiTwitter } from "@mdi/js";
+import {
+  mdiGithub,
+  mdiGitlab,
+  mdiLaptop,
+  mdiLinkedin,
+  mdiSpotify,
+} from "@mdi/js";
 import Icon from "@mdi/react";
 import {
   List,
@@ -96,6 +102,23 @@ export class PhoneNav extends React.Component<PhoneNavProps, PhoneNavState> {
 
         <ListItemButton
           component="a"
+          href={"https://gitlab.com/AdrienBenaceur"}
+          target="_blank"
+          sx={{
+            borderRadius: 1,
+            "&:hover": {
+              backgroundColor: "text.secondary",
+            },
+          }}
+        >
+          <ListItemIcon sx={{ color: "text.primary" }}>
+            <Icon path={mdiGitlab} className="list-svg" />
+          </ListItemIcon>
+          <ListItemText primary={"Gitlab"} />
+        </ListItemButton>
+
+        <ListItemButton
+          component="a"
           href={"https://www.linkedin.com/in/adrien-benaceur-933570182/"}
           target="_blank"
           sx={{
@@ -126,23 +149,6 @@ export class PhoneNav extends React.Component<PhoneNavProps, PhoneNavState> {
             <Icon path={mdiSpotify} className="list-svg" />
           </ListItemIcon>
           <ListItemText primary={"Spotify"} />
-        </ListItemButton>
-
-        <ListItemButton
-          component="a"
-          href={"https://twitter.com/NAncolie"}
-          target="_blank"
-          sx={{
-            borderRadius: 1,
-            "&:hover": {
-              backgroundColor: "text.secondary",
-            },
-          }}
-        >
-          <ListItemIcon sx={{ color: "text.primary" }}>
-            <Icon path={mdiTwitter} className="list-svg" />
-          </ListItemIcon>
-          <ListItemText primary={"Twitter"} />
         </ListItemButton>
 
         <ListItemButton
