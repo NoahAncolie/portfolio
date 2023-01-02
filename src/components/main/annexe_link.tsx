@@ -31,10 +31,10 @@ export class AnnexeLink extends React.Component<
           },
         }}
       >
-        <ListItemIcon sx={{ color: "text.primary" }}>
+        <ListItemIcon sx={{ color: "text.primary" }} className="annex-icon">
           <Icon path={this.props.link_icon} />
         </ListItemIcon>
-        <ListItemText primary={this.props.link_name} />
+        <ListItemText primary={this.props.link_name} className="annex-icon"/>
       </ListItemButton>
     );
   }

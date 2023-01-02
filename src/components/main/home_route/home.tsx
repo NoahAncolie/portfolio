@@ -1,5 +1,4 @@
 import {
-  mdiAndroid,
   mdiApi,
   mdiDocker,
   mdiEmail,
@@ -7,6 +6,7 @@ import {
   mdiLanguageKotlin,
   mdiLanguageRuby,
   mdiLanguageRubyOnRails,
+  mdiLanguageTypescript,
   mdiMapMarker,
   mdiMaterialUi,
   mdiNodejs,
@@ -103,14 +103,14 @@ export class Home extends React.Component<HomeProps, HomeState> {
             className="stack-list"
           >
             {[
+              { fav_name: "Langage C", fav_icon: mdiLanguageC },
+              { fav_name: "Typescript", fav_icon: mdiLanguageTypescript },
+              { fav_name: "Ruby", fav_icon: mdiLanguageRuby },
+              { fav_name: "Kotlin", fav_icon: mdiLanguageKotlin },
               { fav_name: "Material UI", fav_icon: mdiMaterialUi },
               { fav_name: "nodejs", fav_icon: mdiNodejs },
               { fav_name: "React", fav_icon: mdiReact },
               { fav_name: "Rails", fav_icon: mdiLanguageRubyOnRails },
-              { fav_name: "Ruby", fav_icon: mdiLanguageRuby },
-              { fav_name: "Langage C", fav_icon: mdiLanguageC },
-              { fav_name: "Kotlin", fav_icon: mdiLanguageKotlin },
-              { fav_name: "Programmation Androïd", fav_icon: mdiAndroid },
               { fav_name: "Docker", fav_icon: mdiDocker },
               { fav_name: "Restful API", fav_icon: mdiApi },
             ].map((favourite, index) => (
