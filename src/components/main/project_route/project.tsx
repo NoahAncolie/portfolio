@@ -12,6 +12,7 @@ import projet_1 from "../../../assets/images/projet_1.png";
 import projet_2 from "../../../assets/images/projet_2.png";
 import projet_3 from "../../../assets/images/projet_3.png";
 import projet_4 from "../../../assets/images/projet_4.png";
+import projet_5 from "../../../assets/images/projet_5.png";
 import { ProjectCard } from "./project_card";
 
 const technology_react = { svg: mdiReact, title: "React" };
@@ -32,6 +33,13 @@ export class Project extends React.Component<ProjectProps, ProjectState> {
     super(props);
     this.state = {
       project_cards_data: [
+        {
+          project_name: "Naïk",
+          image_url: projet_5,
+          project_url: "https://naik.vercel.app/",
+          technologies: [technology_react, technology_sass, technology_typescript],
+          text: "Janvier 2023\nExemple de site de marchandises inspiré par la ligne de chaussures Nike.\nUI / UX"
+        },
         {
           project_name: "Fun CSS",
           image_url: projet_4,
