@@ -16,7 +16,7 @@ import Icon from "@mdi/react";
 import { Box, Button, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
 import CV from "../../../assets/images/adrienbenaceur.png";
-import profile from "../../../assets/images/photo.png";
+import profile from "../../../assets/images/photo.jpeg";
 import { Favourite } from "./favourite";
 import "./index.css";
 
