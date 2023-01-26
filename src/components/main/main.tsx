@@ -2,8 +2,8 @@ import {
   mdiGithub,
   mdiGitlab,
   mdiLaptop,
-  mdiLinkedin,
-  mdiSpotify,
+  mdiLinkedin, mdiSchoolOutline,
+  mdiSpotify
 } from "@mdi/js";
 import { Box, Grid, List } from "@mui/material";
 import React from "react";
@@ -71,6 +71,12 @@ export class Main extends React.Component<MainProps, MainState> {
                   link_icon={mdiLaptop}
                   link_url="https://www.malt.fr/profile/adrienbenaceur"
                   link_name="Profile freelance"
+                />
+
+                <AnnexeLink
+                  link_icon={mdiSchoolOutline}
+                  link_url="https://noahancolie.github.io/cours_html_css/index.html"
+                  link_name="Cours Web"
                 />
               </List>
             </Box>
