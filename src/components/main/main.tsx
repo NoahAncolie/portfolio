@@ -56,12 +56,6 @@ export class Main extends React.Component<MainProps, MainState> {
                 />
 
                 <AnnexeLink
-                  link_icon={mdiLinkedin}
-                  link_url="https://www.linkedin.com/in/adrien-benaceur-933570182/"
-                  link_name="Linkedin"
-                />
-
-                <AnnexeLink
                   link_icon={mdiSpotify}
                   link_url="https://open.spotify.com/user/adrien-f?si=08f3d6f7cb11455c"
                   link_name="Spotify"

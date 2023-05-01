@@ -66,7 +66,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
             </ListItem>
             <ListItem>
               <Icon path={mdiMapMarker} className="home-list-svg" />
-              Nantes - France
+              Grenoble - France
             </ListItem>
           </List>
         </Grid>

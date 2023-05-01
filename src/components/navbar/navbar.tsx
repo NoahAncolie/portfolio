@@ -99,7 +99,7 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
             }}
           >
             <Box sx={{ px: 4 }}>
-              <Typography variant="subtitle1">adrienbenaceur.fr</Typography>
+              <Typography variant="h4">adrienbenaceur.fr</Typography>
             </Box>
             {this.state.square_props ? (
               <Box
