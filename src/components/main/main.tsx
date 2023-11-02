@@ -27,7 +27,7 @@ export class Main extends React.Component<MainProps, MainState> {
     return (
       <Box
         sx={{
-          width: "100vw",
+          width: "100%",
           minHeight: "100vh",
           backgroundColor: "primary.main",
         }}
@@ -35,45 +35,12 @@ export class Main extends React.Component<MainProps, MainState> {
         <Grid container spacing={0}>
           <Grid
             item
-            lg={2.6}
+            lg={3}
             md={12}
             sm={12}
             className="hidden-sm"
-            sx={{ p: 2, mt: 10, top: 0 }}
+            sx={{ p: 2, top: 0 }}
           >
-            <Box sx={{ position: "sticky", top: 85 }}>
-              <List className="link-list">
-                <AnnexeLink
-                  link_icon={mdiGithub}
-                  link_url="https://github.com/NoahAncolie"
-                  link_name="Github"
-                />
-
-                <AnnexeLink
-                  link_icon={mdiGitlab}
-                  link_url="https://gitlab.com/AdrienBenaceur"
-                  link_name="Gitlab"
-                />
-
-                <AnnexeLink
-                  link_icon={mdiSpotify}
-                  link_url="https://open.spotify.com/user/adrien-f?si=08f3d6f7cb11455c"
-                  link_name="Spotify"
-                />
-
-                <AnnexeLink
-                  link_icon={mdiLaptop}
-                  link_url="https://www.malt.fr/profile/adrienbenaceur"
-                  link_name="Profile freelance"
-                />
-
-                <AnnexeLink
-                  link_icon={mdiSchoolOutline}
-                  link_url="https://noahancolie.github.io/cours_html_css/index.html"
-                  link_name="Cours Web"
-                />
-              </List>
-            </Box>
           </Grid>
           <Grid
             item
@@ -81,7 +48,6 @@ export class Main extends React.Component<MainProps, MainState> {
             sx={{
               pt: 2,
               px: 2,
-              mt: 10,
             }}
           >
             <Routes>
@@ -90,7 +56,7 @@ export class Main extends React.Component<MainProps, MainState> {
               <Route path="/projets" element={<Project />} />
             </Routes>
           </Grid>
-          <Grid item lg={3.4}></Grid>
+          <Grid item lg={3}></Grid>
         </Grid>
       </Box>
     );

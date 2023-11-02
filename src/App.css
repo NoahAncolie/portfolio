@@ -35,12 +35,12 @@
 
 @keyframes goUp {
     0% {
-        transform: translateY(100%);
+        transform: translateX(100%);
     }
 }
 
 @keyframes goLeft {
     0% {
-        transform: translateY(-100%);
+        transform: translateX(100%);
     }
 }

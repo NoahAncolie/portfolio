@@ -1,0 +1,19 @@
+.bottom-menu-wrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+}
+
+.closed-menu {
+    overflow: hidden;
+    height: 0px;
+}
+
+.opened-menu {
+    overflow: hidden;
+    height: 200px;
+}

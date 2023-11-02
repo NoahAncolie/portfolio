@@ -26,7 +26,7 @@ export class Footer extends React.Component<FooterProps, FooterState> {
                     borderColor: "text.secondary",
                     textAlign: "center",
                     py: 3.5,
-                    backgroundColor: "primary.dark",
+                    backgroundColor: "primary.main",
                   }}
                 >
                   <Typography variant="caption">

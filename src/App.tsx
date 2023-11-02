@@ -6,6 +6,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
+import { BottomMenu } from "./components/bottom_menu";
 import { Footer } from "./components/footer/footer";
 import { Main } from "./components/main/main";
 import { Navbar } from "./components/navbar/navbar";
@@ -87,11 +88,12 @@ export class App extends React.Component<AppProps, AppState> {
                 backgroundColor: "primary.main",
               }}
             >
-              <Navbar />
               <Main />
+              <BottomMenu />
               <Footer />
             </Box>
           </BrowserRouter>
+          {/* THEME TOOGLER  */}
           <Box
             sx={{
               width: 20,
@@ -101,8 +103,8 @@ export class App extends React.Component<AppProps, AppState> {
               backgroundColor: "text.primary",
               color: "primary.main",
               position: "fixed",
-              bottom: 20,
-              left: 30,
+              top: 30,
+              right: 30,
               zIndex: 400,
               transition: "0.5s ease-in-out",
               transform: this.state.is_dark ? "rotate(0deg)" : "rotate(180deg)",
@@ -113,6 +115,7 @@ export class App extends React.Component<AppProps, AppState> {
           >
             <Icon path={mdiThemeLightDark} />
           </Box>
+          {/* TRANSITION adrienbenaceur.fr */}
           <Box
             sx={{
               backgroundColor: "primary.main",
@@ -127,10 +130,10 @@ export class App extends React.Component<AppProps, AppState> {
             className="adrienbenaceur"
           >
             <Box display="flex" sx={{overflow: 'hidden'}}>
-              <Typography variant="h1" sx={{ fontSize: "5.5vw"}} color="secondary" className="anime-name">
+              <Typography variant="h1" sx={{ fontSize: "5.5vw"}} color="text.primary" className="anime-name">
                 adrienbenaceur
               </Typography>
-              <Typography variant="h1" sx={{ color: "text.primary", fontSize: "5.5vw" }} className="anime-fr">
+              <Typography variant="h1" sx={{ fontSize: "5.5vw" }} color="secondary" className="anime-fr">
                 .fr
               </Typography>
             </Box>

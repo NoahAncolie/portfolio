@@ -77,7 +77,7 @@ export class Skills extends React.Component<SkillsProps, SkillsState> {
               <Skillbar skill_name="Vim" skill_value={65} />
               <Skillbar skill_name="Git" skill_value={50} />
               <Skillbar skill_name="Flutter" skill_value={45} />
-              <Skillbar skill_name="Open Id" skill_value={35} />
+              <Skillbar skill_name="OAuth" skill_value={60} />
             </Box>
           </section>
           <br />
@@ -88,7 +88,7 @@ export class Skills extends React.Component<SkillsProps, SkillsState> {
             <Box>
               <Skillbar skill_name="Linux" skill_value={65} />
               <Skillbar skill_name="MacOS" skill_value={55} />
-              <Skillbar skill_name="Windows" skill_value={20} />
+              <Skillbar skill_name="Windows" skill_value={70} />
             </Box>
           </section>
           <br />

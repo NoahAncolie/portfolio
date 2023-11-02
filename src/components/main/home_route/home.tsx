@@ -16,7 +16,7 @@ import Icon from "@mdi/react";
 import { Box, Button, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
 import CV from "../../../assets/images/adrienbenaceur.png";
-import profile from "../../../assets/images/photo.jpeg";
+import profile from "../../../assets/images/ice.png";
 import { Favourite } from "./favourite";
 import "./index.css";
 
@@ -38,8 +38,7 @@ export class Home extends React.Component<HomeProps, HomeState> {
             sx={{
               width: 1,
               borderRadius: 5,
-              overflow: "hidden",
-              boxShadow: 1,
+              overflow: "hidden"
             }}
           >
             <img

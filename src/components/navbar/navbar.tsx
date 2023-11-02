@@ -86,6 +86,7 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
               height: 80,
               backdropFilter: "blur(8px)",
               WebkitBackdropFilter: "blur(8px)",
+              backgroundColor: "text.disabled",
               position: "fixed",
               top: 0,
               left: 0,
@@ -94,7 +95,6 @@ export class Navbar extends React.Component<NavbarProps, NavbarState> {
               justifyContent: "space-between",
               borderBottom: 1,
               borderColor: "text.secondary",
-              backgroundColor: "text.disabled",
               zIndex: 50,
             }}
           >
