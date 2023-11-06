@@ -1,0 +1,30 @@
+.profile-image {
+  display: block;
+  width: inherit;
+}
+
+.home-list-svg {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.quote-svg {
+  width: 20px;
+}
+
+.stack-list svg {
+  width: 40px;
+  margin: 5px;
+}
+
+.link-list svg {
+  width: 30px;
+}
+
+.bottom {
+  transform: rotate(45deg) scale(1.4);
+}
+
+.top {
+  transform: scale(1.4);
+}

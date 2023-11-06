@@ -20,17 +20,15 @@ export class Footer extends React.Component<FooterProps, FooterState> {
             <footer>
                 <Box
                   sx={{
-                    color: "#ffffff",
-                    width: 1,
-                    borderTop: 1,
-                    borderColor: "text.secondary",
-                    textAlign: "center",
-                    py: 3.5,
-                    backgroundColor: "primary.main",
+                    position: 'fixed',
+                    bottom: 0,
+                    color: "text.primary",
+                    textAlign: "left",
+                    p: 3.5,
                   }}
                 >
                   <Typography variant="caption">
-                    Copyright © 2022 adrienbenaceur.fr | Tout droits réservés.
+                    Copyright © 2022 adrienbenaceur.fr | All rights reserved.
                   </Typography>
                 </Box>
               </footer>

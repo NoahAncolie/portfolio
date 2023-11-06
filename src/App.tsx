@@ -1,24 +1,26 @@
 import { mdiThemeLightDark } from "@mdi/js";
 import Icon from "@mdi/react";
-import { Typography } from "@mui/material";
 import { createTheme, Theme, ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/system";
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
-import { BottomMenu } from "./components/bottom_menu";
+import bg_dark from "./assets/images/wallpaper_dark.png";
+import bg_light from "./assets/images/wallpaper_light.png";
+import { BottomMenu } from "./components/bottom_menu/botom_menu";
 import { Footer } from "./components/footer/footer";
-import { Main } from "./components/main/main";
-import { Navbar } from "./components/navbar/navbar";
+import { Router } from "./components/app/router";
 import { GetColorMode, SetColorMode } from "./functions/storage/local_storage";
 
 interface AppProps {
-  secondary : any
+  secondary: any;
 }
 
 interface AppState {
   theme: Theme;
   is_dark: boolean;
+  backgroundImage: string;
+  primaryColor: string;
 }
 
 export class App extends React.Component<AppProps, AppState> {
@@ -27,6 +29,8 @@ export class App extends React.Component<AppProps, AppState> {
     this.state = {
       theme: this.getTheme(GetColorMode()),
       is_dark: GetColorMode(),
+      backgroundImage: this.getBackground(GetColorMode()),
+      primaryColor: this.getColor(GetColorMode())
     };
   }
 
@@ -34,13 +38,13 @@ export class App extends React.Component<AppProps, AppState> {
     return createTheme({
       palette: {
         primary: {
-          main: "#eceff1",
+          main: "#E8E8E8",
         },
         secondary: this.props.secondary,
         text: {
-          primary: "#191919",
-          secondary: "#1919192c",
-          disabled: "#eceff1ab",
+          primary: "#1A1A1A",
+          secondary: "#1A1A1A2c",
+          disabled: "#E8E8E8ab",
         },
       },
     });
@@ -50,13 +54,13 @@ export class App extends React.Component<AppProps, AppState> {
     return createTheme({
       palette: {
         primary: {
-          main: "#191919",
+          main: "#1A1A1A",
         },
         secondary: this.props.secondary,
         text: {
-          primary: "#ffffff",
-          secondary: "#ffffff2c",
-          disabled: "#191919ab",
+          primary: "#E8E8E8",
+          secondary: "#E8E8E82c",
+          disabled: "#1A1A1Aab",
         },
       },
     });
@@ -66,12 +70,30 @@ export class App extends React.Component<AppProps, AppState> {
     return is_dark ? this.darkTheme() : this.lightTheme();
   }
 
+  getBackground(is_dark: boolean) {
+    return is_dark ? bg_dark : bg_light;
+  }
+
+  getColor(is_dark: boolean) {
+    return is_dark ? "#1A1A1A" : "#E8E8E8"
+  }
+
   toggleTheme() {
     if (this.state.is_dark) {
-      this.setState({ is_dark: false, theme: this.lightTheme() });
+      this.setState({
+        is_dark: false,
+        theme: this.lightTheme(),
+        backgroundImage: bg_light,
+        primaryColor: "#E8E8E8"
+      });
       SetColorMode(false);
     } else {
-      this.setState({ is_dark: true, theme: this.darkTheme() });
+      this.setState({
+        is_dark: true,
+        theme: this.darkTheme(),
+        backgroundImage: bg_dark,
+        primaryColor: "#1A1A1A"
+      });
       SetColorMode(true);
     }
   }
@@ -88,7 +110,7 @@ export class App extends React.Component<AppProps, AppState> {
                 backgroundColor: "primary.main",
               }}
             >
-              <Main />
+              <Router backgroundImage={this.state.backgroundImage} primaryColor={this.state.primaryColor} />
               <BottomMenu />
               <Footer />
             </Box>
@@ -99,9 +121,11 @@ export class App extends React.Component<AppProps, AppState> {
               width: 20,
               height: 20,
               p: 1,
+              border: 2,
               borderRadius: 50,
-              backgroundColor: "text.primary",
-              color: "primary.main",
+              backgroundColor: "primary.main",
+              color: "text.primary",
+              borderColor: "text.primary",
               position: "fixed",
               top: 30,
               right: 30,
@@ -112,31 +136,9 @@ export class App extends React.Component<AppProps, AppState> {
             onClick={() => {
               this.toggleTheme();
             }}
+            className="theme-toggler"
           >
             <Icon path={mdiThemeLightDark} />
-          </Box>
-          {/* TRANSITION adrienbenaceur.fr */}
-          <Box
-            sx={{
-              backgroundColor: "primary.main",
-              zIndex: 100,
-              position: "fixed",
-              top: 0,
-              left: 0,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            className="adrienbenaceur"
-          >
-            <Box display="flex" sx={{overflow: 'hidden'}}>
-              <Typography variant="h1" sx={{ fontSize: "5.5vw"}} color="text.primary" className="anime-name">
-                adrienbenaceur
-              </Typography>
-              <Typography variant="h1" sx={{ fontSize: "5.5vw" }} color="secondary" className="anime-fr">
-                .fr
-              </Typography>
-            </Box>
           </Box>
         </ThemeProvider>
       </Box>
