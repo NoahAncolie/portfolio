@@ -71,8 +71,6 @@ export class Home extends React.Component<HomeProps, HomeState> {
               }}
             >
               <Skills />
-              <Project />
-              <Profile />
             </Grid>
             <Grid item lg={3}></Grid>
           </Grid>

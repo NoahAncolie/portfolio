@@ -64,9 +64,6 @@ export function BottomMenu(props: any): JSX.Element {
             <Link to="/profile">Profile</Link>
           </ListItem>
           <ListItem>
-            <Link to="/skills">Skills</Link>
-          </ListItem>
-          <ListItem>
             <Link to="/projects">Projects</Link>
           </ListItem>
         </List>
@@ -206,6 +203,7 @@ export function BottomMenu(props: any): JSX.Element {
                 borderRadius: "10px",
                 justifyContent: "center",
               }}
+              disabled
             >
               ART
             </ListItemButton>

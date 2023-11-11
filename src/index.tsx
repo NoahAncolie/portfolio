@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
-import { blue, green, orange, purple, red } from '@mui/material/colors';
+import { amber, blue, blueGrey, cyan, deepOrange, deepPurple, green, indigo, lightBlue, lightGreen, orange, pink, purple, red, teal } from '@mui/material/colors';
 
-const colorTheme = [red, purple, orange, green, blue]
+const colorTheme = [red, purple, orange, green, blue, pink, purple, deepPurple, indigo, lightBlue, cyan, teal, lightGreen, amber, deepOrange, blueGrey]
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

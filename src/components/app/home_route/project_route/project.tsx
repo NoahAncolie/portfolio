@@ -6,7 +6,7 @@ import {
   mdiReact,
   mdiSass,
 } from "@mdi/js";
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
 import projet_1 from "../../../../assets/images/project_1.png";
 import projet_2 from "../../../../assets/images/project_2.png";
@@ -89,14 +89,36 @@ export class Project extends React.Component<ProjectProps, ProjectState> {
   }
   render() {
     return (
-      <Box sx={{ mb: 4 }}>
-        <Typography variant="h2" sx={{borderBottom: 1, borderColor: 'text.secondary', mb: 2}}>
-          Projects
-        </Typography>
-        {this.state.project_cards_data.map((project_card_data, index) => (
-          <ProjectCard project_card_data={project_card_data} key={index} />
-        ))}
-      </Box>
+      <Grid container spacing={0}>
+        <Grid
+          item
+          lg={3}
+          md={12}
+          sm={12}
+          className="hidden-sm"
+          sx={{ p: 2, top: 0 }}
+        ></Grid>
+        <Grid
+          item
+          lg={6}
+          sx={{
+            pt: 2,
+            px: 2,
+          }}
+        >
+          <Box sx={{ mb: 4 }}>
+            <Typography
+              variant="h2"
+              sx={{ borderBottom: 1, borderColor: "text.secondary", mb: 2 }}
+            >
+              Projects
+            </Typography>
+            {this.state.project_cards_data.map((project_card_data, index) => (
+              <ProjectCard project_card_data={project_card_data} key={index} />
+            ))}
+          </Box>
+        </Grid>
+      </Grid>
     );
   }
 }
