@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 import { amber, blue, blueGrey, cyan, deepOrange, deepPurple, green, indigo, lightBlue, lightGreen, orange, pink, purple, red, teal } from '@mui/material/colors';
@@ -12,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App secondary={colorTheme[Math.floor(Math.random() * colorTheme.length)]}/>
+    <App/>
   </React.StrictMode>
 );
 
