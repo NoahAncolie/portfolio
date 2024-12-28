@@ -1,0 +1,118 @@
+:root {
+  --grey: #EAEAEC;
+}
+
+font-face {
+  font-family: "Bolin Gerii";
+  src: url("./assets/fonts/Bolin_Gerii.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+font-face {
+  font-family: "Noe";
+  src: url("./assets/fonts/noe.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  background-color: var(--grey);
+}
+
+h1 {
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+
+}
+
+.main-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: Bolin Gerii;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  transform: translateX(-25%);
+  font-size: 10rem;
+  color: rgb(17, 17, 17);
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+}
+
+.menu-layer {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(50% + 30px);
+  align-content: center;
+  background: var(--grey);
+
+  ul {
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline;
+      margin: 0 20px;
+      font-weight: 200;
+    }
+  }
+
+  a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+  }
+}
+
+.photo {
+  background-image: url("./assets/images/ebenisterie.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+tooltip {
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: rgb(255, 157, 0);
+  font-weight: 500;
+}
+
+.tooltip-img {
+  width: 100%;
+}
+
+.img-subtitle {
+  font-weight: 200;
+}
+
+.center-text {
+  text-align: center;
+}

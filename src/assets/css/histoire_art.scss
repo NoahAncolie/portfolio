@@ -1,0 +1,180 @@
+$color-1: black;
+$color-2: var(--grey);
+
+// PAGE D'ACCUEIL
+
+.histoire_title {
+  margin: auto;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 3rem;
+}
+
+.timeline {
+  margin: 4em auto;
+  position: relative;
+  max-width: 46em;
+  
+  &:before {
+    background-color: $color-1;
+    content: '';
+    margin-left: -1px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    width: 2px;
+    height: 100%;
+  }
+  list-style-type: none;
+
+  .short {
+    margin-top: 1em;
+  }
+}
+
+.timeline-event-copy {
+  padding: 2em;
+  position: relative;
+  top: -1.875em;
+  left: 4em;
+  width: 80%;
+  
+  h3 {
+    font-size: 1.75em;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+  
+  p:not(.timeline-event-thumbnail) {
+    padding-bottom: 1.2em;
+  }
+}
+
+.timeline-event-icon {
+  border-radius: 2px;
+  background-color: $color-1;
+  outline: 0.5em solid $color-2;
+  display: block;
+  margin: 0.5em 0.5em 0.5em -0.5em;
+  position: relative;
+  top: 2em;
+  left: 2em;
+  width: 1em;
+  height: 1em;
+  transform: rotate(45deg);
+
+  &::before {
+    background-color: $color-2;
+    content: '';
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    transform: translate(50%, 50%);
+  }
+}
+
+.timeline-event-thumbnail {
+  color: $color-2;
+  font-size: 1em;
+  border-radius: 2px;
+  font-weight: 200;
+  background-color: $color-1;
+  padding: 0.25em 1em 0.2em 1em;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.timeline-event-thumbnail:hover {
+  background-color: rgb(255, 157, 0);
+  transition: ease-in-out 0.30s;
+}
+
+
+.event-link {
+  color: $color-2;
+  text-decoration: none;
+  transition: ease-in-out 0.25s;
+}
+
+// COURS
+
+.histoire-art-cours {
+  ol {
+    list-style-type: upper-roman;
+    li {
+      margin: 20px auto;
+    }
+    ul {
+      li {
+        margin: 0;
+      }
+    }
+  }
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  height: fit-content;
+}
+
+.cours-focus {
+  position: absolute;
+  top: 180px;
+  right: 0;
+  width: 18vw;
+  height: 100%;
+  border: 1px solid orange;
+}
+
+.cours-focus-content {
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+}
+
+.histoire-art-cours-title {
+  text-align: center;
+  margin: 50px auto;
+  font-size: 3em;
+  height: 100px;
+}
+
+.cours-content {
+  width: 50vw;
+  margin: 50px auto;
+}
+
+.partie-cours {
+  margin-top: 100px;
+}
+
+.image-centre {
+  width: 100%;
+  margin: auto;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.limiter {
+  svg {
+    width: 100%;
+    padding: 0;
+    height: 50px;
+    margin: 0;
+  }
+}
+
+//Renaissance Italienne
+.titus-thermes {
+  margin: 50px auto;
+}
