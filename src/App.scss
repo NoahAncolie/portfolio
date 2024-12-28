@@ -41,16 +41,18 @@ h1 {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  background-color: var(--grey);
+  z-index: 2;
 }
 
 .title {
   font-family: Bolin Gerii;
   position: relative;
   top: 30%;
-  left: 50%;
+  text-align: center;
+  width: 100%;
   margin: 0;
   padding: 0;
-  transform: translateX(-25%);
   font-size: 10rem;
   color: rgb(17, 17, 17);
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
@@ -89,7 +91,7 @@ h1 {
   width: 80%;
   height: 100%;
   position: absolute;
-  top: 45%;
+  bottom: -45%;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 0;
@@ -101,7 +103,7 @@ h1 {
 .tooltip {
   text-decoration: underline;
   cursor: pointer;
-  text-decoration-color: rgb(255, 157, 0);
+  text-decoration-color: white;
   font-weight: 500;
 }
 
@@ -115,4 +117,44 @@ h1 {
 
 .center-text {
   text-align: center;
+}
+
+.limiter {
+  svg {
+    width: 100%;
+    padding: 0;
+    height: 50px;
+    margin: 20px auto;
+  }
+}
+
+.left-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  border-radius: 0;
+  border-right: 1px solid white;
+  padding: 20px;
+  color: white;
+
+  a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 200;
+    width: 100%;
+  }
+
+  a:hover {
+    transition: 0.2s ease-in-out;
+    color:rgba(0, 0, 0, 0.115);
+  }
+
+  li {
+    padding: 10px;
+    width: 100%;
+    list-style-type: none;
+  }
 }

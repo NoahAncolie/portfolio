@@ -109,18 +109,13 @@ $color-2: var(--grey);
 .histoire-art-cours {
   ol {
     list-style-type: upper-roman;
-    li {
-      margin: 20px auto;
-    }
-    ul {
-      li {
-        margin: 0;
-      }
-    }
+  }
+  li {
+    padding: 5px 10px;
+    list-style-position: inside;
   }
   h2 {
     margin-top: 50px;
-    margin-bottom: 0;
     text-align: center;
   }
   height: fit-content;
@@ -162,18 +157,12 @@ $color-2: var(--grey);
 .image-centre {
   width: 100%;
   margin: auto;
+  margin-bottom: 20px;
   left: 50%;
   position: relative;
   transform: translateX(-50%);
-}
-
-.limiter {
-  svg {
-    width: 100%;
-    padding: 0;
-    height: 50px;
-    margin: 0;
-  }
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.436);
 }
 
 //Renaissance Italienne

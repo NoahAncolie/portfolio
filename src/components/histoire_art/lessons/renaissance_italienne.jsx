@@ -80,7 +80,7 @@ export const RenaissanceItalienne = () => {
                             <li>Les Enfants</li>
                             <li>Les <span className="tooltip"  onMouseOver={() => {setFocus(<img className="tooltip-img" src={medaillon} alt="Médaillon et cuir découpé en Marqueterie Renaissance" />)}}>Médaillons</span></li>
                             <li>Les <span className="tooltip"  onMouseOver={() => {setFocus(<><img className="tooltip-img" src={guirlande} alt="Guirlande de fleurs sculptée" /><h3>Guirlande</h3>Une guirlande est un motif ornemental et décoratif sculpté, représentant un entrecroisement de feuillages, de fleurs et de fruits, généralement suspendu en feston et qui orne généralement les frontons, les murs ou des mobiliers</>)}}>Guirlandes de feuillages</span></li>
-                            <li>Les <span className="tooltip"  onMouseOver={() => {setFocus(<><img className="tooltip-img" src={cuir} alt="Dessin d'un cuir découpé" /></>)}}>Cuirs Découpés</span></li>
+                            <li>Les <span className="tooltip"  onMouseOver={() => {setFocus(<><img className="tooltip-img" src={cuir} alt="Dessin d'un cuir découpé" /><p>En arts décoratifs, le motif ornemental de <b>cuir découpé</b>, aussi appelé <b>ornement auriculaire</b> ou <b>lobé</b>, rappelle par sa forme un morceau de cuir ou de métal découpé et enroulé en volutes stylisées. Il trouve son origine dans les motifs de rubans apparus au Moyen Âge. </p></>)}}>Cuirs Découpés</span></li>
                         </ul> 
                     </p>
                     <div className="titus-thermes">
