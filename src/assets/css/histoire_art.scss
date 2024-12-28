@@ -127,18 +127,20 @@ $color-2: var(--grey);
 }
 
 .cours-focus {
-  position: absolute;
-  top: 180px;
+  position: fixed;
+  top: 0px;
   right: 0;
   width: 18vw;
   height: 100%;
-  border: 1px solid orange;
+  border-left: 1px solid white;
+  border-radius: 0;
 }
 
 .cours-focus-content {
   position: sticky;
   top: 0px;
   padding: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .histoire-art-cours-title {
