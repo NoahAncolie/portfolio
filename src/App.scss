@@ -103,12 +103,14 @@ h1 {
 .tooltip {
   text-decoration: underline;
   cursor: pointer;
-  text-decoration-color: white;
-  font-weight: 500;
+  text-decoration-color:white;
+  font-weight: 200;
+  font-style: italic;
 }
 
 .tooltip-img {
   width: 100%;
+  cursor: pointer;
 }
 
 .img-subtitle {
