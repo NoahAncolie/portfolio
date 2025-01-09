@@ -2,13 +2,15 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import "./App.scss";
 import HistoireDeLart from "./components/histoire_art/histoirte_art";
 import { RenaissanceItalienne } from "./components/histoire_art/lessons/renaissance_italienne";
-import { useEffect } from "react";
-import { useState } from "react";
+import { RenaissanceFrançaise } from "./components/histoire_art/lessons/renaissance-française";
+import { StyleLouisXIII } from "./components/histoire_art/lessons/louis_xiii";
 
 
 export const App = () => {
   const histoire_routes = [
     { path: "renaissance-italienne", element: <RenaissanceItalienne /> },
+    { path: "renaissance-française", element: <RenaissanceFrançaise />},
+    { path: "louis-XIII", element: <StyleLouisXIII/>}
   ];
 
 

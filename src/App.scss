@@ -1,5 +1,6 @@
 :root {
   --grey: #EAEAEC;
+  --grey-2: #7d7d7d;
 }
 
 font-face {
@@ -31,6 +32,10 @@ html {
 h1 {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
 
+}
+
+h4 {
+  color: var(--grey-2);
 }
 
 .main-page {
@@ -103,9 +108,8 @@ h1 {
 .tooltip {
   text-decoration: underline;
   cursor: pointer;
-  text-decoration-color:white;
-  font-weight: 200;
-  font-style: italic;
+  text-decoration-color: lightblue;
+  font-weight: 900;
 }
 
 .tooltip-img {

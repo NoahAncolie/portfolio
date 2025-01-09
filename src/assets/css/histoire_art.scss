@@ -45,7 +45,8 @@ $color-2: var(--grey);
   
   h4 {
     font-size: 1.2em;
-    margin-bottom: 1.2em;
+    margin-top: 5px;
+    color: var(--grey-2);
   }
   
   strong {
@@ -110,6 +111,9 @@ $color-2: var(--grey);
   ol {
     list-style-type: upper-roman;
   }
+  ul {
+    list-style-type:circle;
+  }
   li {
     padding: 5px 10px;
     list-style-position: inside;
@@ -117,6 +121,10 @@ $color-2: var(--grey);
   h2 {
     margin-top: 50px;
     text-align: center;
+  }
+
+  .historique {
+    font-style: italic;
   }
   height: fit-content;
 }
@@ -148,6 +156,9 @@ $color-2: var(--grey);
   h4 {
     margin: 10px auto;
   }
+  i {
+    font-weight: 200;
+  }
 }
 
 .histoire-art-cours-title {
@@ -169,6 +180,17 @@ $color-2: var(--grey);
 .image-centre {
   width: 100%;
   margin: auto;
+  margin-bottom: 20px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.436);
+}
+
+.small-img {
+  width: 20vw;
+  margin-top: 40px;
   margin-bottom: 20px;
   left: 50%;
   position: relative;

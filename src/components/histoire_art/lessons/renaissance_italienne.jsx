@@ -12,6 +12,8 @@ import cuir from '../../../assets/images/histoire_art/cuir-decoupe.png'
 import guirlande from '../../../assets/images/histoire_art/guirlande.jpg'
 import raphaelRooms from '../../../assets/images/histoire_art/raphael-rooms.jpg'
 import voluteFleurie from '../../../assets/images/histoire_art/volute-fleurie.jpg'
+import rondeBosse from '../../../assets/images/histoire_art/ronde-bosse.jpg'
+import stuc from '../../../assets/images/histoire_art/stuc.jpg'
 import { Rinceau } from "../../../assets/svg/rinceau."
 import { Focus } from "../../focus"
 import { useState } from "react"
@@ -114,14 +116,12 @@ export const RenaissanceItalienne = () => {
                         Au XVIᵉ siècle vont se développer, sur les panneaux, les <span className='tooltip' onMouseOver={() => {setFocus(<> <FocusImg src={voluteFleurie} alt="Meuble renaissance Italienne richement sculpté de volutes fleureis et chimères" className="tooltip-img" /> </>)}}>volutes fleuries</span> terminées en chimères, en balustre humain, en mascarons et en moulures ornées encadrant les figures mythologiques. La décoration en relief est obtenue par la sculpture ou la mouluration.
                         <br/> 
                         <br/> 
-                        Il y a une abondance de sculpture en 
-                        <span className='tooltip' onMouseOver={() => {<> <h3>Ronde-bosse</h3>La ronde-bosse est une technique de sculpture en trois dimensions de l'Antiquité qui, contrairement aux hauts-reliefs et aux bas-reliefs, n'est pas physiquement attachée à un fond mais repose sur un socle.</>}}>ronde de bosse</span>
-                         (médaillons ou niches avec figures saillantes), pieds en forme de pattes de lion.
+                        Il y a une abondance de sculpture en <span className='tooltip' onMouseOver={() => {setFocus(<> <FocusImg src={rondeBosse} alt="Sculpture en ronde bosse dans une niche"/> <i>Naples, Campania, Italy</i> <h3>Ronde-bosse</h3>La ronde-bosse est une technique de sculpture en trois dimensions de l'Antiquité qui, contrairement aux hauts-reliefs et aux bas-reliefs, n'est pas physiquement attachée à un fond mais repose sur un socle.</>)}}>ronde de bosse</span> (médaillons ou niches avec figures saillantes), pieds en forme de pattes de lion.
                         <br/>
                         <br/>
                         La décoration polychrome est obtenue par :
                         <ul>
-                            <li>Le stuc. (enduit imitant le marbre)</li>
+                            <li>Le <span className="tooltip" onMouseOver={() => {setFocus(<> <FocusImg src={stuc} alt="Stuc de Giovanni Spedulo et Luigi Marinelli, Le Char d'Apollon" /> <i>Stuc de Giovanni Spedulo et Luigi Marinelli, Le Char d'Apollon, Florence, Villa di Poggio Imperiale.</i> <h3>Stuc</h3>Le stuc, dont la technique remonte à l'Antiquité, est un enduit teinté dans la masse, à base de chaux. Il est utilisé en recouvrement des plafonds et des murs, aussi bien à l'intérieur qu'à l'extérieur. C'est un mélange de chaux aérienne éteinte et de « charges », celles-ci pouvant être du sable, de la poudre de marbre ou encore de la poudre de brique.</>)}}>stuc</span>. (enduit imitant le marbre)</li>
                             <li>La peinture</li>
                             <li>Des incrustations de pâtes colorées</li>
                             <li>De la marqueterie de bois précieux</li>
