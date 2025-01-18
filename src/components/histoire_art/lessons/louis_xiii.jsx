@@ -10,7 +10,8 @@ import pointeGateau from "../../../assets/images/histoire_art/pointe-gateau.jpg"
 import cartoucheAveugle from "../../../assets/images/histoire_art/cartouche-aveugle.jpg"
 import tournage from "../../../assets/images/histoire_art/tournage.png"
 import litLouis13 from "../../../assets/images/histoire_art/lit-louis13.JPG"
-
+import cabinet13 from "../../../assets/images/histoire_art/cabinet13.jpg"
+import placage13 from "../../../assets/images/histoire_art/placage13.png"
 
 
 const Limiter = () => {
@@ -112,7 +113,12 @@ export const StyleLouisXIII = () => {
                         <li><b>Tables :</b> Pieds tournés, entrejambes en H, recouvertes de nappes.</li>
                         <li><b>Sièges :</b> Tabourets, chaires à bras, et fauteuils au dossier haut, souvent sculptés.</li>
                     </ul>
-                    <br />
+                    <div className="titus-thermes">
+                        <img className="image-centre" src={cabinet13} alt="Cabinet de style Louis XIII" /> 
+                        <p className="img-subtitle center-text">CABINET LOUIS XIII &nbsp; <span className="tooltip" onMouseOver={() => {
+                            setFocus(<><FocusImg src={placage13} alt="Schéma technique de placage panneau en ébène période Louis XIII"/><h3>Technique du placage d'un paneau d'ébène</h3>Un châssis, avec panneaux embrevés affleurant avec les montants et les traverses est recouvert sur les faces et les chants de feuillets d'ébène, unis ou sculptés de faible épaisseur. Ces feuillets sont maintenus à l'aide de colle. Les menuisiers en ébène deviennent les ébénistes et se consacrent à la technique du placage, essentiellement sur les cabinets.</>)
+                        }} >technique de placage</span> </p>
+                    </div>
                     <p>
                         La forme générale des meubles est souvent compacte. Plus sévères que rigoureuses, ces
                         lignes sont géométriques et inspirées de l'architecture.
@@ -124,6 +130,15 @@ export const StyleLouisXIII = () => {
                     </p>
                     <img src={litLouis13} alt="Lit dans le style Louis XIII" className="small-img" />
                     <p className="img-subtitle center-text">Lit Louis XIII</p>
+                </div>
+                <div className="partie-cours" id="artistes">
+                    <h2>Les Artistes</h2>
+                    <Limiter />
+                    <ul>
+                        <li><b>Menuisiers :</b> Laurent stabre, Jean Macé, Pierre Boulle</li>
+                        <li><b>Architectes :</b> François Mansart, Jacques Lemercier</li>
+                        <li><b>Peintres :</b> Nicolas Poussin, Louis le Nain</li>
+                    </ul>
                 </div>
 
             </div>

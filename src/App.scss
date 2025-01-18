@@ -1,6 +1,7 @@
 :root {
   --grey: #EAEAEC;
   --grey-2: #7d7d7d;
+  --second-color: #B6F22C;
 }
 
 font-face {
@@ -31,7 +32,6 @@ html {
 
 h1 {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
-
 }
 
 h4 {
@@ -39,15 +39,37 @@ h4 {
 }
 
 .main-page {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: var(--grey);
   z-index: 2;
+
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 2px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+
+  h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow: none;
+    font-weight: 600;
+    font-family: Bolin Gerii;
+    letter-spacing: 0.1em;
+  }
 }
 
 .title {
@@ -59,56 +81,65 @@ h4 {
   margin: 0;
   padding: 0;
   font-size: 10rem;
-  color: rgb(17, 17, 17);
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+  color: white;
+  text-shadow: none;
 }
 
 .menu-layer {
-  position: relative;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(50% + 30px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
   align-content: center;
-  background: var(--grey);
+  padding: 40px;
 
   ul {
-    list-style: none;
     text-align: center;
     li {
       display: inline;
       margin: 0 20px;
       font-weight: 200;
+      justify-content: centrer;
+      font-size: 1.1em;
     }
   }
 
   a {
-    color: rgb(17, 17, 17);
+    color: white;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to left, white, white);
+    background-size: 0% 1px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0;
+  }
+
+  a:hover {
+    background-size: 100% 1px;
   }
 }
 
 .photo {
-  background-image: url("./assets/images/ebenisterie.png");
+  background-image: url("./assets/images/commode-boulle.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 80%;
   height: 100%;
-  position: absolute;
-  bottom: -45%;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
   border-radius: 0;
   margin: 0;
   padding: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .tooltip {
   text-decoration: underline;
   cursor: pointer;
-  text-decoration-color: lightblue;
+  text-decoration-color: var(--second-color);
   font-weight: 900;
 }
 
@@ -141,14 +172,14 @@ h4 {
   height: 100%;
   width: 10%;
   border-radius: 0;
-  border-right: 1px solid white;
+  margin-top: 30px;
   padding: 20px;
   color: white;
 
   a {
     text-decoration: none;
     font-size: 1.2em;
-    color: white;
+    color: black;
     font-weight: 200;
     width: 100%;
   }

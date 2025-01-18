@@ -3,6 +3,15 @@ $color-2: var(--grey);
 
 // PAGE D'ACCUEIL
 
+.histoire-layer {
+  width: 70%;
+  margin: 50px 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
 .histoire_title {
   margin: auto;
   text-align: center;
@@ -32,7 +41,14 @@ $color-2: var(--grey);
   }
 }
 
+.timeline-event:hover {
+  .timeline-event-icon {
+    transform: rotate(90deg);
+  }
+}
+
 .timeline-event-copy {
+  transition: ease-in-out 0.30s;
   padding: 2em;
   position: relative;
   top: -1.875em;
@@ -59,9 +75,10 @@ $color-2: var(--grey);
 }
 
 .timeline-event-icon {
+  transition: ease-in-out 0.30s;
   border-radius: 2px;
   background-color: $color-1;
-  outline: 0.5em solid $color-2;
+  // outline: 0.5em solid $color-2;
   display: block;
   margin: 0.5em 0.5em 0.5em -0.5em;
   position: relative;
@@ -71,31 +88,36 @@ $color-2: var(--grey);
   height: 1em;
   transform: rotate(45deg);
 
-  &::before {
-    background-color: $color-2;
-    content: '';
-    display: block;
-    width: 0.5em;
-    height: 0.5em;
-    transform: translate(50%, 50%);
-  }
+  // &::before {
+  //   background-color: $color-2;
+  //   content: '';
+  //   display: block;
+  //   width: 0.5em;
+  //   height: 0.5em;
+  //   transform: translate(50%, 50%);
+  // }
+  // LIGHT CENTER
 }
 
 .timeline-event-thumbnail {
   color: $color-2;
   font-size: 1em;
-  border-radius: 2px;
-  font-weight: 200;
+  border-radius: 4px;
+  // font-weight: 200;
   background-color: $color-1;
-  padding: 0.25em 1em 0.2em 1em;
+  padding: 0.5em 1em 0.5em 1em;
   display: inline-block;
   cursor: pointer;
   margin-bottom: 2em;
 }
 
 .timeline-event-thumbnail:hover {
-  background-color: rgb(255, 157, 0);
+  background-color: var(--second-color);
   transition: ease-in-out 0.30s;
+
+  .event-link {
+    color: $color-1 !important;
+  }
 }
 
 
@@ -231,6 +253,17 @@ $color-2: var(--grey);
     cursor: pointer;
     right: 130px;
   }
+}
+
+.h3-cours {
+  margin: 20px 0 5px 0;
+  color: rgb(44, 44, 44);
+}
+
+.detail {
+  border-left: 2px solid var(--second-color);
+  border-radius: 0;
+  padding-left: 5px;
 }
 
 //Renaissance Italienne
