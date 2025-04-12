@@ -5,15 +5,32 @@ import { RenaissanceItalienne } from "./components/histoire_art/lessons/renaissa
 import { RenaissanceFrançaise } from "./components/histoire_art/lessons/renaissance-française";
 import { StyleLouisXIII } from "./components/histoire_art/lessons/louis_xiii";
 import { StyleLouisXIV } from "./components/histoire_art/lessons/louis_xiv";
+import Technologie from "./components/technologie/technologie";
 
+const histoireRoute = {path: "/histoire-art", subs: [
+  { path: "renaissance-italienne", element: <RenaissanceItalienne /> },
+  { path: "renaissance-française", element: <RenaissanceFrançaise />},
+  { path: "louis-XIII", element: <StyleLouisXIII/>},
+  { path: "louis-XIV", element: <StyleLouisXIV/>},
+]}
+
+const technologieRoute = {path: '/technologie', subs:[
+]};
 
 export const App = () => {
-  const histoire_routes = [
-    { path: "renaissance-italienne", element: <RenaissanceItalienne /> },
-    { path: "renaissance-française", element: <RenaissanceFrançaise />},
-    { path: "louis-XIII", element: <StyleLouisXIII/>},
-    { path: "louis-XIV", element: <StyleLouisXIV/>},
-  ];
+
+
+  const RenderRoute = (route) => {
+    return (<>
+      {route.subs.map((subRoute, index) => (
+          <Route
+            key={index}
+            path={route.path + '/' + subRoute.path}
+            element={subRoute.element}
+          ></Route>
+        ))}
+    </>)
+  }
 
 
   return (
@@ -21,13 +38,13 @@ export const App = () => {
         <div className="left-menu">
           <ul>
             <li>
-              <Link to={"/histoire-art"}>Histoire de l'art</Link>
+              <Link to={histoireRoute.path}>Histoire de l'art</Link>
             </li>
             <li>
-              <Link to={"/histoire-art"}>Technologie</Link>
+              <Link to={technologieRoute.path}>Technologie</Link>
             </li>
             <li>
-              <Link to={"/histoire-art"}>Exposés</Link>
+              <Link to={""}>Exposés</Link>
             </li>
             <li>
               <Link to={"/"}>Accueil</Link>
@@ -36,14 +53,10 @@ export const App = () => {
         </div>
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="histoire-art" element={<HistoireDeLart />} />
-        {histoire_routes.map((route, index) => (
-          <Route
-            key={index}
-            path={"histoire-art/" + route.path}
-            element={route.element}
-          ></Route>
-        ))}
+        <Route path={histoireRoute.path} element={<HistoireDeLart />} />
+        <Route path={technologieRoute.path} element={<Technologie />} />
+        {RenderRoute(histoireRoute)}
+        {RenderRoute(technologieRoute)}
       </Routes>
     </BrowserRouter>
   );
@@ -68,13 +81,13 @@ const MenuList = () => {
   return (
     <ul>
       <li>
-        <Link to={"/histoire-art"}>Histoire de l'art</Link>
+        <Link to={histoireRoute.path}>Histoire de l'art</Link>
       </li>
       <li>
-        <Link to={"/histoire-art"}>Technologie</Link>
+        <Link to={technologieRoute.path}>Technologie</Link>
       </li>
       <li>
-        <Link to={"/histoire-art"}>Exposés</Link>
+        <Link to={""}>Exposés</Link>
       </li>
     </ul>
   );

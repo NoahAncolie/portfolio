@@ -1,0 +1,49 @@
+.technologie {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        grid-auto-rows: minmax(100px, 100px);
+        
+        div {
+            height: 100px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            position: relative;
+        }
+
+        div:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.326);
+        }
+
+        h2 {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 0 0 2px rgba(0, 0, 0, 0.326);
+        }
+
+        a {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        }
+    
+        .page-link-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    
+}
