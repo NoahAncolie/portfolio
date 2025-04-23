@@ -7,6 +7,9 @@ import { StyleLouisXIII } from "./components/histoire_art/lessons/louis_xiii";
 import { StyleLouisXIV } from "./components/histoire_art/lessons/louis_xiv";
 import Technologie from "./components/technologie/technologie";
 import { Directoire } from "./components/histoire_art/lessons/directoire";
+import { StyleRestauration } from "./components/histoire_art/lessons/restauration";
+import { StyleLouisPhilippe } from "./components/histoire_art/lessons/louis_philippe";
+import { StyleEmpire } from "./components/histoire_art/lessons/empire";
 
 const histoireRoute = {path: "/histoire-art", subs: [
   { path: "renaissance-italienne", element: <RenaissanceItalienne /> },
@@ -14,6 +17,9 @@ const histoireRoute = {path: "/histoire-art", subs: [
   { path: "louis-XIII", element: <StyleLouisXIII/>},
   { path: "louis-XIV", element: <StyleLouisXIV/>},
   { path: "directoire", element: <Directoire/>},
+  { path: "restauration", element: <StyleRestauration/>},
+  { path: "louis-philippe", element: <StyleLouisPhilippe/>},
+  { path: "empire", element: <StyleEmpire/>},
 ]}
 
 const technologieRoute = {path: '/technologie', subs:[

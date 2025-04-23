@@ -1,7 +1,7 @@
 :root {
   --grey: #EAEAEC;
   --grey-2: #7d7d7d;
-  --second-color: #B6F22C;
+  --second-color: #F3CA40;
 }
 
 font-face {
@@ -27,11 +27,15 @@ font-face {
 }
 
 html {
-  background-color: var(--grey);
+  background-color: white;
 }
 
-h1 {
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+h1, h2 {
+  // text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
+  font-family: Noe;
+  i {
+  font-family: Noe;
+  }
 }
 
 h4 {

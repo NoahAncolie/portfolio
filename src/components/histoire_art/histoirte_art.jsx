@@ -7,6 +7,7 @@ const HistoireDeLart = () => {
         {date: '1589 - 1650', name: 'Style Louis XIII', link: 'louis-XIII', subtitle: "Style de transition", short: "Caractéristique d'une période de transition entre le style Renaissance et le style baroque dont il assimile progressivement les influences italienne, espagnole et flamande, il a inspiré à la fin du XIXe siècle et au début du XXe siècle, le style néo-Louis XIII1."},
         {date: '1650 - 1700', name: 'Style Louis XIV', link: 'louis-XIV', subtitle: "Richesse et Majestée", short: "Le style Louis XIV est un style d'ameublement couvrant plus ou moins la période du règne de Louis XIV (1661 à 1715). Ce style est caractérisé par la majesté et la richesse de son mobilier. C'est pendant cette période que la technique de marqueterie dite « marqueterie Boulle » est développée."},
         {date: '1789 - 1804', name: 'Style Directoire', link: 'directoire', subtitle: "Transition entre Louis XVI et l'Empire", short: "Le style Directoire est un style d'ameublement et de décoration en vogue de 1789 à 1803. Marquant la transition entre les styles Louis XVI et Empire, il se caractérise par une facture sobre, des formes simples et l'apparition de certains thèmes décoratifs."},
+        {date: '1804 - 1815', name: 'Style Empire', link: 'empire', subtitle: "Le style Empire est un style d'ameublement et de décoration néo-classique inspiré par Napoléon Ier et ses campagnes militaires", short: "Le style Empire est un style d'ameublement et de décoration en vogue de 1803 (après les campagnes d'Égypte et d'Italie) à 1821. Il succède au style Directoire et précède le style Restauration. Conçu par les architectes Charles Percier et Pierre Fontaine, il prend son essor sous les directives de Napoléon Ier, et perdure après son abdication. Par extension il désigne aussi des œuvres architecturales, dont les monuments impériaux, et l'art de propagande produit sous Napoléon Ier en peinture et en sculpture."},
         {date: '1815 - 1830', name: 'Style Restauration', link: 'restauration', subtitle: "Règnes de Louis XVIII et Charles X", short: "Le style Restauration, contemporain du Biedermeier qui fleurit ailleurs en Europe continentale, caractérise l'art sous les règnes de Louis XVIII et de son frère Charles X. L'état des finances ne permet pas de grandes dépenses."},
         {date: '1830 - 1850', name: 'Style Louis Philippe', link: 'louis-philippe', subtitle: "Règne de Louis Philippe (1830 - 1848)", short: "Le style Louis-Philippe est un style de mobilier français en vogue sous le règne de Louis-Philippe (1830-1848) qui influence aussi l'architecture. C'est un style de bourgeois affairés et cossus, partagés entre le souci de leur confort et le désir de se donner des lettres de noblesse."},
         {date: '1850 - 1890', name: 'Style Napoléon III', link: 'napoleon-III', subtitle: "Règne de Napoléon III (1848 - 1890)", short: "Le style Second Empire, dit aussi style Napoléon III, est un style architectural, d'ameublement, d'arts décoratifs et vestimentaire, né en France durant le Second Empire, sous l'impulsion de l' empereur Napoléon III et de l' impératrice Eugénie."},
@@ -18,7 +19,7 @@ const HistoireDeLart = () => {
 
     return (
         <div className="page_layer">
-            <h1 className="page_title">Histoire de l'art</h1>
+            <h1 className="page_title">Histoire de l'Art</h1>
             <ul class="timeline">
                 {events.map((event, index) => 
                     <li class="timeline-event" key={index}>
@@ -31,7 +32,7 @@ const HistoireDeLart = () => {
                         </div>
                     </li>
                 )}
-            </ul>  
+            </ul>
         </div>
     )
 }
