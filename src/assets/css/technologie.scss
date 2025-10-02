@@ -1,31 +1,55 @@
 .technologie {
     .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
-        grid-auto-rows: minmax(100px, 100px);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        perspective: 1000px;
         
         div {
-            height: 100px;
+            height: 400px;
             overflow: hidden;
             cursor: pointer;
-            transition: 0.4s ease-in-out;
+            transition: 0.4s  ;
             position: relative;
+            border: 1px solid var(--text);
+            padding: 20px;
+            border-radius: 20px;
+            background-color: var(--background);
+            width: 200px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.064);
+            transition: 0.3s cubic-bezier(.79,.06,.57,1.02);
         }
 
         div:hover {
-            transform: scale(1.03);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.326);
+            transform: translateZ(100px);
+            z-index: 6;
         }
 
-        h2 {
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-shadow: 0 0 2px rgba(0, 0, 0, 0.326);
-        }
+        .card-1 {
+            z-index: 5;
+
+        } 
+
+        .card-2 {
+            transform: translateZ(-50px) rotateY(20deg);
+            z-index: 4;
+        } 
+
+        .card-3 {
+            transform: translateZ(-100px) rotateY(20deg);
+            z-index: 3;
+        } 
+
+        .card-4 {
+            transform: translateZ(-150px) rotateY(20deg);
+            z-index: 2;
+        } 
+
+        .card-5 {
+            transform: translateZ(-200px) rotateY(20deg);
+            z-index: 1;
+        } 
+
 
         a {
             display: block;
@@ -43,6 +67,28 @@
             left: 0;
             width: 100%;
         }
+    }
+
+    .arrows {
+        button {
+            transition: 0.3s cubic-bezier(.79,.06,.57,1.02);
+            background-color: var(--text);
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+            svg {
+                width: 25px;
+                height: 25px;
+                fill: var(--background);
+            }
+        }
+
+        button:hover {
+            background-color: var(--second-color);
+        }
+        position: absolute;
+        right: 0;
+        margin: 50px;
     }
 
     

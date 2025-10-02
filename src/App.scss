@@ -1,45 +1,81 @@
 :root {
   --grey: #EAEAEC;
   --grey-2: #7d7d7d;
-  --second-color: #F3CA40;
+  --second-color: #ED311D;
+  --text: #25252D;
+  --background: #fbfaf8;
+
+  --text-size: 1.2rem;
+  --title-size: 2.5rem;
 }
 
 font-face {
-  font-family: "Bolin Gerii";
-  src: url("./assets/fonts/Bolin_Gerii.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Avenir Next";
+  src: url("./assets/fonts/next.otf") format("truetype");
 }
 
-font-face {
-  font-family: "Noe";
-  src: url("./assets/fonts/noe.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 * {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: "Avenir Next";
     border-radius: 3px;
     margin: 0;
     padding: 0;
 }
 
 html {
-  background-color: white;
+  background-color: var(--background);
 }
 
-h1, h2 {
-  // text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.115), -5px -5px 10px rgb(255, 255, 255);
-  font-family: Noe;
-  i {
-  font-family: Noe;
+p, li, a, span, i, b {
+  font-size: var(--text-size);
+}
+
+h1 {
+  font-size: var(--title-size);
+  span, i, b {
+    font-size: var(--title-size);
   }
+}
+
+h2 {
+  font-size: var(--text-size);
+  font-weight: 600;
+}
+
+h3, h4 {
+  font-size: var(--text-size);
+  font-weight: 400;
+  opacity: 50%;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 0.2s ease-in-out;
 }
 
 h4 {
   color: var(--grey-2);
+}
+
+.arrowed-link {
+  svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    padding: 0;
+    fill: var(--text);
+    transition: ease-in-out 0.2s;
+  }
+}
+
+.arrowed-link:hover {
+  svg {
+    fill: var(--second-color);
+  }
 }
 
 .main-page {
@@ -53,40 +89,22 @@ h4 {
   margin: 0;
   padding: 0;
   z-index: 2;
-
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 2px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.1px);
-  -webkit-backdrop-filter: blur(8.1px);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-
-  h2 {
-    position: relative;
-    top: 45%;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: white;
-    text-shadow: none;
-    font-weight: 600;
-    font-family: Bolin Gerii;
-    letter-spacing: 0.1em;
-  }
 }
 
 .title {
-  font-family: Bolin Gerii;
-  position: relative;
-  top: 30%;
+  position: absolute;
   text-align: center;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  font-size: 10rem;
-  color: white;
-  text-shadow: none;
+  font-size: 11rem;
+  color: var(--text);
+  // text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.34);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.secondary-in-title {
+  color: var(--second-color);
+  font-size: inherit;
 }
 
 .menu-layer {
@@ -107,25 +125,10 @@ h4 {
       font-size: 1.1em;
     }
   }
-
-  a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    background: linear-gradient(to left, white, white);
-    background-size: 0% 1px;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    border-radius: 0;
-  }
-
-  a:hover {
-    background-size: 100% 1px;
-  }
 }
 
 .photo {
-  background-image: url("./assets/images/commode-boulle.jpg");
+  background-image: url("./assets/images/paper.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,7 +140,25 @@ h4 {
   border-radius: 0;
   margin: 0;
   padding: 0;
-  z-index: 1;
+  opacity: 50%;
+}
+
+.photo-rest {
+  background-image: url("./assets/images/paper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+
+  opacity: 50%;
+  z-index: -1;
 }
 
 .tooltip {
@@ -153,7 +174,7 @@ h4 {
 }
 
 .img-subtitle {
-  font-weight: 200;
+  font-size: var(--text-size);
 }
 
 .center-text {
@@ -169,34 +190,64 @@ h4 {
   }
 }
 
-.left-menu {
+.navigation {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 10%;
+  width: 100%;
   border-radius: 0;
-  margin-top: 30px;
-  padding: 20px;
-  color: white;
+  margin-top: 0px;
+  z-index: 2;
+  background-color: var(--background);
+  overflow: hidden;
 
-  a {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: black;
-    font-weight: 200;
-    width: 100%;
-    display: block;
+  .more-nav {
+    transition: ease-in-out 0.2s;
+    height: 0px;
+    padding: 0px 60px;
+    border-bottom: 0px solid var(--text);
+    opacity: 0;
+
+    ul {
+      list-style-type: none;
+    }
   }
 
-  a:hover {
-    transition: 0.2s ease-in-out;
-    color:rgba(0, 0, 0, 0.115);
+  .more-nav-open {
+    padding: 20px 60px;
+    height: fit-content !important;
+    border-bottom: 1px solid var(--text);
+    opacity: 100%;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid var(--text);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0;
+
+  .menu-right {
+    transform: translateX(-10px);
   }
 
   li {
-    padding: 10px;
-    width: 100%;
     list-style-type: none;
+    display: inline;
+    padding: 10px;
+    cursor: pointer;
   }
 }
+
+.page_layer, .histoire-art-cours, .accueil {
+  animation: 0.2s ease-in-out appear;
+
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
+

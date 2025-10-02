@@ -58,7 +58,7 @@ export const StyleLouisXIV = () => {
                     <br/>
                     <p>
                         Sa mère prend la charge de gouverner le pays et sur les conseils de Richelieu elle fait appel à <span className="tooltip" onMouseOver={() => {
-                            setFocus(<><FocusImg src={mazarin} alt="Portrait peint de Mazarin" /> <h3>Jules Mazarin</h3><h4>Cardinal catholique, diplomate et principal ministre d'État</h4>Jules Raymond Mazarin, connu sous son titre de cardinal Mazarin, né à Pescina, dans les Abruzzes, royaume de Naples, le 14 juillet 1602 et mort à Vincennes le 9 mars 1661, est un prélat, diplomate et homme politique français d'origine italienne, d'abord au service de la papauté, puis des rois de France Louis XIII et Louis XIV.</>)
+                            setFocus(<><FocusImg src={mazarin} alt="Portrait peint de Mazarin" /> <h2>Jules Mazarin</h2><h3>Cardinal catholique, diplomate et principal ministre d'État</h3><p>Jules Raymond Mazarin, connu sous son titre de cardinal Mazarin, né à Pescina, dans les Abruzzes, royaume de Naples, le 14 juillet 1602 et mort à Vincennes le 9 mars 1661, est un prélat, diplomate et homme politique français d'origine italienne, d'abord au service de la papauté, puis des rois de France Louis XIII et Louis XIV.</p></>)
                         }}>Mazarin</span> pour diriger le royaume. Mazarin était un grand collectionneur, amateur de meubles italiens, il fait tout naturellement appel à ses compatriotes, leur influence s'ajoute à celle de nombreux autres venus en particulier des Flandres et d'Espagne.
                         <br/>
                         Il ne peut exister dans ces conditions de style spécifiquement français. 
@@ -73,17 +73,17 @@ export const StyleLouisXIV = () => {
                     <p>
                         Trois grandes lignes se dégagent principalement : <b>unité</b> , <b>majesté</b>, <b>distinction</b>
                     </p>
-                    <h3 className="h3-cours">Unité</h3>
+                    <h2 className="h3-cours">Unité</h2>
                     <p>
                         Colbert et Le Brun fondent aux <span className="tooltip" onMouseOver={() => {setFocus(
-                            <><FocusImg src={gobelins} alt="Louis XIV visitant la manufacture Royale de teinture et de draps Fins"/> <h3>La Manufacture des Gobelins</h3><h4>Le début du règne personnel de Louis XIV</h4>En 1667, la manufacture des Gobelins est transformée en « manufacture royale des meubles de la Couronne » sous l’impulsion de Colbert, devenu contrôleur général des finances deux ans plus tôt. Confiée au peintre Charles Lebrun, elle s’inscrit dans l’élaboration d’un mécénat d’Etat.</>
+                            <><FocusImg src={gobelins} alt="Louis XIV visitant la manufacture Royale de teinture et de draps Fins"/> <h2>La Manufacture des Gobelins</h2><h3>Le début du règne personnel de Louis XIV</h3><p>En 1667, la manufacture des Gobelins est transformée en « manufacture royale des meubles de la Couronne » sous l’impulsion de Colbert, devenu contrôleur général des finances deux ans plus tôt. Confiée au peintre Charles Lebrun, elle s’inscrit dans l’élaboration d’un mécénat d’Etat.</p></>
                         )}}>Gobelins</span> en 1667 la manufacture royale des meubles de la couronne, dont les membres sont nommés par le Roi. Le Brun devient le maître absolu de l'art français, il réunit sous ses ordres, sculpteurs, peintres, orfèvres, ébénistes, bronziers, tapissiers... <u>On obtient ainsi une unité jamais connue jusque-là</u>. 
                     </p>
-                    <h3 className="h3-cours">Majesté</h3>
+                    <h2 className="h3-cours">Majesté</h2>
                     <p>
                         La majesté est due à l'ampleur des compositions, à <b>l'ordre colossal</b> souvent adopté qui s'étend sur deux étages à la richesse des matériaux utilisés. <u>(mobilier en argent massif)</u>. 
                     </p>
-                    <h3 className="h3-cours">Distinction</h3>
+                    <h2 className="h3-cours">Distinction</h2>
                     <p>
                         La distinction est crée par le contraste entre la <b>somptuosité des intérieurs</b> et la <b>simplicité des façades</b>. L'originalité du style réside en une volonté très forte d'avoir un <u>art national bien français</u>.
                     </p>
@@ -126,7 +126,7 @@ export const StyleLouisXIV = () => {
                     </p>
                     <img src={mascaron} alt="Mascaron de cuivre époque Louis XIV" className="small-img"/>
                     <p className="img-subtitle center-text">Mascaron de fontaine d’époque Louis XIV, <span className="tooltip" onMouseOver={() => {setFocus(
-                        <><h3>Tête de faune</h3><h4>Sculpture de Michel-Ange</h4>La Tête de faune est une statue en marbre réalisée par Michel-Ange encore enfant vers 1488 et dont la trace a été perdue depuis les années 1490.</>
+                        <><h2>Tête de faune</h2><h3>Sculpture de Michel-Ange</h3><p>La Tête de faune est une statue en marbre réalisée par Michel-Ange encore enfant vers 1488 et dont la trace a été perdue depuis les années 1490.</p></>
                     )}}>tête de Faune</span></p>
                 </div>
 
@@ -177,7 +177,7 @@ export const StyleLouisXIV = () => {
                         )}}>"LL" de Louis XIV</span>.</li>
                         <li>Motifs végétaux tels que feuilles de chêne, laurier et acanthe, fleurs en guirlandes.</li>
                         <li><span className="tooltip" onMouseOver={() => {setFocus(
-                            <><FocusImg src={commodeBoulle} alt="Commode réalisée pour Louis XIV par André-Charles Boulle" /><h3>Commode pour Louis XIV par Boulle</h3> </>
+                            <><FocusImg src={commodeBoulle} alt="Commode réalisée pour Louis XIV par André-Charles Boulle" /><h2>Commode pour Louis XIV par Boulle</h2> </>
                         )}}>Motifs animaliers</span> : dragon ailé, griffes de lion, têtes de bélier et de dauphin.</li>
                         <li>La coquille, très populaire à la fin du style.</li>
                     </ul>
@@ -212,7 +212,7 @@ export const StyleLouisXIV = () => {
                     </ul>
                     <br />
                     <p>
-                        <h3>Les techniques de marqueterie.</h3>
+                        <h2>Les techniques de marqueterie.</h2>
                         <br />
                         Les procédés de placage déjà employés sous Louis XIII se développent sous Louis
                         XIV. Les bâtis sont en chêne, en sapin ou en peuplier, (sapin et peuplier réservés pour
@@ -232,19 +232,19 @@ export const StyleLouisXIV = () => {
                 <div id="artistes" className="partie-cours">
                     <h2>Artistes</h2>
                     <Limiter/>
-                    <h3>Ébénistes</h3>
+                    <h2>Ébénistes</h2>
                     <ul>
                         <li>André Charles Boulle (1642-1732)</li>
                         <li>Pierre Golle</li>
                         <li>Alexandre Jean Oppenordt (1639-1715)</li>
                     </ul>
-                    <h3>Ornemanistes</h3>
+                    <h2>Ornemanistes</h2>
                     <ul>
                         <li>Charles Lebrun (1619-1690)</li>
                         <li>Jean Bérain (1640-1711)</li>
                         <li>Antoine Lepautre (1621-1691)</li>
                     </ul>
-                    <h3>Sculpteurs</h3>
+                    <h2>Sculpteurs</h2>
                     <ul>
                         <li>Philippe Caffiéri</li>
                         <li>François Girardon (1628-1715)</li>

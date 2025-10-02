@@ -45,10 +45,10 @@ export const Directoire = () => {
                     Le style Directoire se situe à la fin du XVIIIe siècle, de 1789 à 1804. Il est composé de plusieurs périodes :
                     </p>
                     <ul>
-                        <li>période <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={priseBastille} alt="Dessin aquarellé de Jean-Pierre Houël, Paris de la prise de la Bastille" /><h3>Révolution française</h3><h4>Période de l'histoire de France et de ses colonies, du 5 mai 1789 au 9 novembre 1799</h4>La Révolution française est une période de bouleversements politiques et sociaux en France et dans ses colonies, ainsi qu'en Europe à la fin du XVIIIᵉ siècle. Traditionnellement, on la fait commencer à l'ouverture des États généraux le 5 mai 1789 et finir au coup d'État de Napoléon Bonaparte le 9 novembre 1799. En ce qui concerne l'histoire de France, elle met fin à l'Ancien Régime, notamment à la monarchie absolue remplacée par la monarchie constitutionnelle, puis par la Première République.</>)}}>Révolutionnaire</span></li>
-                        <li>période de la <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={convention} alt="Image du décret de la convention Nationale" /><h3>Convention Nartionale</h3><h4>Régime politique français qui gouverne la France du 21 septembre 1792 au 26 octobre 1795</h4>La Convention nationale est une assemblée constituante élue en septembre 1792, au cours de la Révolution française, à la suite de la chute de Louis XVI le 10 août 1792 et de l'échec de la monarchie constitutionnelle. Cette assemblée, qui succède à l'Assemblée législative, est élue pour la première fois en France au suffrage universel masculin, et est destinée à élaborer une nouvelle constitution. </>)}}>Convention</span></li>
-                        <li>période du <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={audienceDirectoire} alt="Audience du Directoire en costume, le 30 brumaire an IV." /><h3>Directoire</h3><h4>Régime politique français en place durant la Première République de 1795 à 1799</h4>Le Directoire est un régime politique français de type directorial en place durant la Première République, du 4 brumaire an IV au 18 brumaire an VIII. Il tire son nom du « directoire » c'est-à-dire l'ensemble des cinq directeurs, chefs du gouvernement entre lesquels le pouvoir exécutif et les ministres sont répartis, pour éviter la tyrannie, et dont le siège est au palais du Luxembourg. Mis en place à la fin de la Terreur par les républicains modérés de la Convention thermidorienne, le régime — inspiré par une bourgeoisie enrichie par la spéculation sur les biens nationaux et les assignats — rétablit le suffrage censitaire, qui sert à élire les deux chambres législatives, le Conseil des Cinq-Cents et le Conseil des Anciens</>)}}>Directoire</span></li>
-                        <li>période du <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={consulat} alt="Les trois consuls : Cambacérès, Bonaparte, Lebrun recevant les serments des présidents. Installation du Conseil d'État au palais du Petit-Luxembourg, le 25 décembre 1799 par Auguste Couder." /><h3>Consulat</h3><h4>Régime politique en France, du 9 novembre 1799 au 18 mai 1804</h4><p><i>Les trois consuls : Cambacérès, Bonaparte, Lebrun recevant les serments des présidents. Installation du Conseil d'État au palais du Petit-Luxembourg, le 25 décembre 1799 par Auguste Couder.</i><br />Le Consulat est un régime politique de la France depuis le coup d'État du 18 Brumaire jusqu'à la proclamation du Premier Empire le 18 mai 1804 par Napoléon Bonaparte. La Constitution de l'an VIII établit alors un régime autoritaire dirigé, en théorie, par trois consuls. Il est en réalité dirigé par le Premier consul, Napoléon Bonaparte, qui deviendra consul à vie en 1802. Le Consulat fait suite au régime du Directoire et dure jusqu'à la fin de la Première République.</p></>)}}>Consulat</span></li>
+                        <li>période <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={priseBastille} alt="Dessin aquarellé de Jean-Pierre Houël, Paris de la prise de la Bastille" /><h2>Révolution française</h2><h2>Période de l'histoire de France et de ses colonies, du 5 mai 1789 au 9 novembre 1799</h2><p>La Révolution française est une période de bouleversements politiques et sociaux en France et dans ses colonies, ainsi qu'en Europe à la fin du XVIIIᵉ siècle. Traditionnellement, on la fait commencer à l'ouverture des États généraux le 5 mai 1789 et finir au coup d'État de Napoléon Bonaparte le 9 novembre 1799. En ce qui concerne l'histoire de France, elle met fin à l'Ancien Régime, notamment à la monarchie absolue remplacée par la monarchie constitutionnelle, puis par la Première République.</p></>)}}>Révolutionnaire</span></li>
+                        <li>période de la <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={convention} alt="Image du décret de la convention Nationale" /><h2>Convention Nartionale</h2><h2>Régime politique français qui gouverne la France du 21 septembre 1792 au 26 octobre 1795</h2><p>La Convention nationale est une assemblée constituante élue en septembre 1792, au cours de la Révolution française, à la suite de la chute de Louis XVI le 10 août 1792 et de l'échec de la monarchie constitutionnelle. Cette assemblée, qui succède à l'Assemblée législative, est élue pour la première fois en France au suffrage universel masculin, et est destinée à élaborer une nouvelle constitution.</p> </>)}}>Convention</span></li>
+                        <li>période du <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={audienceDirectoire} alt="Audience du Directoire en costume, le 30 brumaire an IV." /><h2>Directoire</h2><h2>Régime politique français en place durant la Première République de 1795 à 1799</h2><p>Le Directoire est un régime politique français de type directorial en place durant la Première République, du 4 brumaire an IV au 18 brumaire an VIII. Il tire son nom du « directoire » c'est-à-dire l'ensemble des cinq directeurs, chefs du gouvernement entre lesquels le pouvoir exécutif et les ministres sont répartis, pour éviter la tyrannie, et dont le siège est au palais du Luxembourg. Mis en place à la fin de la Terreur par les républicains modérés de la Convention thermidorienne, le régime — inspiré par une bourgeoisie enrichie par la spéculation sur les biens nationaux et les assignats — rétablit le suffrage censitaire, qui sert à élire les deux chambres législatives, le Conseil des Cinq-Cents et le Conseil des Anciens</p></>)}}>Directoire</span></li>
+                        <li>période du <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={consulat} alt="Les trois consuls : Cambacérès, Bonaparte, Lebrun recevant les serments des présidents. Installation du Conseil d'État au palais du Petit-Luxembourg, le 25 décembre 1799 par Auguste Couder." /><h2>Consulat</h2><h2>Régime politique en France, du 9 novembre 1799 au 18 mai 1804</h2><p><i>Les trois consuls : Cambacérès, Bonaparte, Lebrun recevant les serments des présidents. Installation du Conseil d'État au palais du Petit-Luxembourg, le 25 décembre 1799 par Auguste Couder.</i><br />Le Consulat est un régime politique de la France depuis le coup d'État du 18 Brumaire jusqu'à la proclamation du Premier Empire le 18 mai 1804 par Napoléon Bonaparte. La Constitution de l'an VIII établit alors un régime autoritaire dirigé, en théorie, par trois consuls. Il est en réalité dirigé par le Premier consul, Napoléon Bonaparte, qui deviendra consul à vie en 1802. Le Consulat fait suite au régime du Directoire et dure jusqu'à la fin de la Première République.</p></>)}}>Consulat</span></li>
                     </ul>
                 </div>
 
@@ -71,11 +71,11 @@ export const Directoire = () => {
                         On utilisera par exemple <i>les ornements Louis XVI</i>, comme le médaillon ovale qui se transformera en <b>médaillon rond</b>.
                     </p>    
                     <p>
-                    La décoration intérieure est simple et légère.
-Les fouilles faites à Pompeï restent la source principale d'inspiration.
-Les panneaux ne comportent qu'un seul motif central : médaillon rond, octogone ou hexagone allongé, etc.
-Les tons employés sont inspirés des fresques pompéiennes : brun, rouge, rouge cramoisi, etc.
-Les couleurs criardes sont très appréciées du public.
+                        La décoration intérieure est simple et légère.
+                        Les fouilles faites à Pompeï restent la source principale d'inspiration.
+                        Les panneaux ne comportent qu'un seul motif central : médaillon rond, octogone ou hexagone allongé, etc.
+                        Les tons employés sont inspirés des fresques pompéiennes : brun, rouge, rouge cramoisi, etc.
+                        Les couleurs criardes sont très appréciées du public.
                     </p>
                 </div>
 
@@ -121,18 +121,18 @@ Les couleurs criardes sont très appréciées du public.
                 <div id="artistes" className="partie-cours">
                     <h2>Artistes</h2>
                     <Limiter/>
-                    <h4>Les menuisiers ébénistes</h4>
+                    <h2>Les menuisiers ébénistes</h2>
                     <ul>
                         <li>Les frères Jacob</li>
                         <li>Pierre Antoine Bellangé</li>
                     </ul>
                     <br />
-                    <h4>Les Menuisiers</h4>
+                    <h2>Les Menuisiers</h2>
                     <ul>
                         <li>Jean Baptiste Demay</li>
                     </ul>
                     <br />
-                    <h4>Les Ébenistes</h4>
+                    <h2>Les Ébenistes</h2>
                     <ul>
                         <li>Bernard Molitor</li>
                         <li>Joseph Stockel</li>

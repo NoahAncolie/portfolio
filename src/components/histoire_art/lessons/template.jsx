@@ -12,7 +12,7 @@ const Limiter = () => {
 
 export const Template = () => {
 
-    // <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={} alt="" /><h3></h3><i></i><p></p></>)}}></span>
+    // <span className="tooltip" onMouseOver={() => {setFocus(<><FocusImg src={} alt="" /><h2></h2><h3></h4><p></p></>)}}></span>
     
     const [focusState, setFocus] = useState(<></>)
     const [zoomState, setZoom] = useState(false)

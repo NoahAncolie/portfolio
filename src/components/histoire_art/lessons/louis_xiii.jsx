@@ -51,10 +51,10 @@ export const StyleLouisXIII = () => {
                     <p>
                         Le style Louis XIII s'étend environ de 1610 à 1643, recouvrant les règnes d’ <span className="tooltip" onMouseOver={() => {
                             setFocus(
-                                <><FocusImg src={henri4} alt="Portrait peint du roi de France Henri 4"/><h3>Henri IV</h3><h4>Roi de France et de Navarre</h4>Henri IV, dit « le Grand » ou « Le Vert Galant », ou encore « Le Bon Roi Henri », né sous le nom d'Henri de Bourbon le 13 décembre 1553 à Pau et mort assassiné le 14 mai 1610 à Paris, est roi de Navarre à partir du 9 juin 1572 sous le nom d'Henri III, et roi de France sous le nom d'Henri IV du 2 août 1589 jusqu'à sa mort en 1610.</>
+                                <><FocusImg src={henri4} alt="Portrait peint du roi de France Henri 4"/><h2>Henri IV</h2><h3>Roi de France et de Navarre</h3><p>Henri IV, dit « le Grand » ou « Le Vert Galant », ou encore « Le Bon Roi Henri », né sous le nom d'Henri de Bourbon le 13 décembre 1553 à Pau et mort assassiné le 14 mai 1610 à Paris, est roi de Navarre à partir du 9 juin 1572 sous le nom d'Henri III, et roi de France sous le nom d'Henri IV du 2 août 1589 jusqu'à sa mort en 1610.</p></>
                             )
                         }} >Henri IV</span> et <span className="tooltip" onMouseOver={() => {setFocus(
-                            <><FocusImg src={louis13} alt="Portrait peint de Louis XIII" /><h3>Louis XIII</h3><h4>Roi de France et de Navarre de 1610 à 1643</h4>Louis XIII, dit « le Juste », fils d'Henri IV et de Marie de Médicis, né le 27 septembre 1601 au château de Fontainebleau et mort le 14 mai 1643 au château Neuf de Saint-Germain-en-Laye, est roi de France et de Navarre de 1610 à 1643</>
+                            <><FocusImg src={louis13} alt="Portrait peint de Louis XIII" /><h2>Louis XIII</h2><h3>Roi de France et de Navarre de 1610 à 1643</h3><p>Louis XIII, dit « le Juste », fils d'Henri IV et de Marie de Médicis, né le 27 septembre 1601 au château de Fontainebleau et mort le 14 mai 1643 au château Neuf de Saint-Germain-en-Laye, est roi de France et de Navarre de 1610 à 1643.</p></>
                         )}} >Louis XIII</span>. Après les guerres de religion, la France, sous Henri IV, connaît une prospérité propice à l’épanouissement artistique. Ce style incorpore des influences variées : baroque italien et flamand, et école de Fontainebleau.
                     </p>
                 </div>
@@ -68,7 +68,7 @@ export const StyleLouisXIII = () => {
                     </div>
                     <p>
                         Le style se caractérise par des constructions en briques avec chaînages en pierre et de hautes toitures souvent ornées de pots à feu. L’influence gréco-romaine est notable, avec un usage libre des ordres classiques. Vers la fin de l’époque, les combles brisés apparaissent, dits <span className="tooltip" onMouseOver={() => {
-                            setFocus(<><FocusImg src={toitMansard} alt="Toit à la mansart parisien"/><h3>Toit à la Mansart</h3><h4>De l'architecte François Mansart</h4><p>François Mansart, né le 23 janvier 1598 à Paris et mort le 23 septembre 1666 dans la même ville, paroisse Saint-Paul, est un architecte français. Il est considéré comme le principal précurseur de l'architecture classique en France</p></>)
+                            setFocus(<><FocusImg src={toitMansard} alt="Toit à la mansart parisien"/><h2>Toit à la Mansart</h2><h3>De l'architecte François Mansart</h3><p>François Mansart, né le 23 janvier 1598 à Paris et mort le 23 septembre 1666 dans la même ville, paroisse Saint-Paul, est un architecte français. Il est considéré comme le principal précurseur de l'architecture classique en France</p></>)
                         }}>"toits à la Mansart"</span>.
                     </p>
                     <img src={françoisMansart} alt="François Mansart Portrait" className="small-img"/>
@@ -89,7 +89,7 @@ export const StyleLouisXIII = () => {
                     <Limiter/>
                     <ul>
                         <li><span className="tooltip" onMouseOver={() => {
-                            setFocus(<><FocusImg src={cartoucheAveugle} alt="Photo d'un cartouche Aveugle style Louis XIII" /><h3>Cartouche Aveugle</h3>Ils font partie des ornements à caractère nerveux. La plupart sont en principe plus gros et plus lourd qu'au style précédent. Ils sont en général aveugles, c’est-à-dire , qu'ils ne renferment aucunes armoiries, ni aucune inscription.</>)
+                            setFocus(<><FocusImg src={cartoucheAveugle} alt="Photo d'un cartouche Aveugle style Louis XIII" /><h2>Cartouche Aveugle</h2><p>Ils font partie des ornements à caractère nerveux. La plupart sont en principe plus gros et plus lourd qu'au style précédent. Ils sont en général aveugles, c’est-à-dire , qu'ils ne renferment aucunes armoiries, ni aucune inscription.</p></>)
                         }}>Cartouches aveugles</span>, souvent plus imposants que ceux des styles précédents.</li>
                         <li>Panneaux en pointe de diamant, parfois "en tas de sable" ou "en pointe de gâteau" selon leur forme.</li>
                         <li>Motifs tels que chimères, chérubins ailés, rinceaux de feuilles d’acanthe, guirlandes, et pattes d’aiglon.</li>
@@ -116,7 +116,7 @@ export const StyleLouisXIII = () => {
                     <div className="titus-thermes">
                         <img className="image-centre" src={cabinet13} alt="Cabinet de style Louis XIII" /> 
                         <p className="img-subtitle center-text">CABINET LOUIS XIII &nbsp; <span className="tooltip" onMouseOver={() => {
-                            setFocus(<><FocusImg src={placage13} alt="Schéma technique de placage panneau en ébène période Louis XIII"/><h3>Technique du placage d'un paneau d'ébène</h3>Un châssis, avec panneaux embrevés affleurant avec les montants et les traverses est recouvert sur les faces et les chants de feuillets d'ébène, unis ou sculptés de faible épaisseur. Ces feuillets sont maintenus à l'aide de colle. Les menuisiers en ébène deviennent les ébénistes et se consacrent à la technique du placage, essentiellement sur les cabinets.</>)
+                            setFocus(<><FocusImg src={placage13} alt="Schéma technique de placage panneau en ébène période Louis XIII"/><h2>Technique du placage d'un paneau d'ébène</h2><p>Un châssis, avec panneaux embrevés affleurant avec les montants et les traverses est recouvert sur les faces et les chants de feuillets d'ébène, unis ou sculptés de faible épaisseur. Ces feuillets sont maintenus à l'aide de colle. Les menuisiers en ébène deviennent les ébénistes et se consacrent à la technique du placage, essentiellement sur les cabinets.</p></>)
                         }} >technique de placage</span> </p>
                     </div>
                     <p>

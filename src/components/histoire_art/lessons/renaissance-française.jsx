@@ -112,11 +112,11 @@ export const RenaissanceFrançaise = () => {
                         <br />
                         <p>
                             Lors des campagnes d'Italie de <span className="tooltip"  onMouseOver={() => {
-                                setFocus(<><FocusImg src={charles8} alt="Buste en bronze du Roi de France Charles VIII" /> <h3>Charles VIII</h3> <h4>Roi de France de 1483 à 1498</h4>Charles VIII, dit « l'Affable », né le 30 juin 1470 au château d'Amboise, où il est mort le 7 avril 1498, est roi de France de 1483 à 1498. Fils de Louis XI, il est le septième et dernier roi de la succession directe de la maison capétienne de Valois, qui règne sur la France depuis 1328.  </>)
+                                setFocus(<><FocusImg src={charles8} alt="Buste en bronze du Roi de France Charles VIII" /> <h2>Charles VIII</h2> <h3>Roi de France de 1483 à 1498</h3><p>Charles VIII, dit « l'Affable », né le 30 juin 1470 au château d'Amboise, où il est mort le 7 avril 1498, est roi de France de 1483 à 1498. Fils de Louis XI, il est le septième et dernier roi de la succession directe de la maison capétienne de Valois, qui règne sur la France depuis 1328.</p></>)
                             }}>Charles VIII</span>, <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={louis12} alt="Portrait peint du Roi de France Louis XII"/><h3>Louis XII</h3><h4>Roi de France de 1498 à 1515</h4>Louis XII, né le 27 juin 1462 au château de Blois et mort le 1ᵉʳ janvier 1515 à Paris, surnommé le « Père du peuple » par les états généraux de 1506, est roi de France de 1498 à 1515. Durant son règne, il se lance dans les guerres d'Italie, notamment la troisième et la quatrième et, sur le plan intérieur, conduit la réforme de la justice et des impôts.</>)
+                                setFocus(<><FocusImg src={louis12} alt="Portrait peint du Roi de France Louis XII"/><h2>Louis XII</h2><h3>Roi de France de 1498 à 1515</h3><p>Louis XII, né le 27 juin 1462 au château de Blois et mort le 1ᵉʳ janvier 1515 à Paris, surnommé le « Père du peuple » par les états généraux de 1506, est roi de France de 1498 à 1515. Durant son règne, il se lance dans les guerres d'Italie, notamment la troisième et la quatrième et, sur le plan intérieur, conduit la réforme de la justice et des impôts.</p></>)
                             }}>Louis XII</span> et <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={francois1} alt="Portrait peint du Roi de France François 1er" /><h3>François Ier</h3><h4>Roi de France de 1515 à 1547</h4>François Iᵉʳ, né sous le nom de François d'Angoulême le 12 septembre 1494 à Cognac et mort le 31 mars 1547 à Rambouillet, est un roi de France ayant régné du 25 janvier 1515, jour de son sacre, à sa mort en 1547. Fils de Charles d'Orléans et de Louise de Savoie, il appartient à la branche de Valois-Angoulême de la dynastie capétienne. </>)
+                                setFocus(<><FocusImg src={francois1} alt="Portrait peint du Roi de France François 1er" /><h2>François Ier</h2><h3>Roi de France de 1515 à 1547</h3><p>François Iᵉʳ, né sous le nom de François d'Angoulême le 12 septembre 1494 à Cognac et mort le 31 mars 1547 à Rambouillet, est un roi de France ayant régné du 25 janvier 1515, jour de son sacre, à sa mort en 1547. Fils de Charles d'Orléans et de Louise de Savoie, il appartient à la branche de Valois-Angoulême de la dynastie capétienne.</p></>)
                             }}>François Ier</span>, les souverains
                             découvrent le raffinement et le luxe des demeures italiennes. Au début du <b>XVIe
                             siècle</b>,
@@ -148,7 +148,7 @@ export const RenaissanceFrançaise = () => {
                         d'oiseau. Il faut signaler le <b>mufle de lions</b>, la <b>tête de bélier</b>, le <b>masque de femme
                         disposé sur une draperie</b>, la <b>tête de chérubin ailé</b>, les <b>entrelacs</b> jouissent d'une grande
                         vogue ; ils forment des encadrements de panneaux et se combinent avec les <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={fleuron} alt="Fleuron sur vitrail" /><h3>Fleuron</h3><h4>Typographie</h4>Les fleurons sont des formes stylisées de fleurs ou de feuilles ; le terme dérive de l'ancien français : floron.</>)
+                                setFocus(<><FocusImg src={fleuron} alt="Fleuron sur vitrail" /><h2>Fleuron</h2><h3>Typographie</h3><p>Les fleurons sont des formes stylisées de fleurs ou de feuilles ; le terme dérive de l'ancien français : floron.</p></>)
                             }}>fleurons</span>
                         et les arabesques.
                     </p>
@@ -165,7 +165,7 @@ export const RenaissanceFrançaise = () => {
                 <div id="mobilier" className="partie-cours">
                     <h2>Mobilier</h2>
                     <Limiter/>
-                    <h3>Principe de construction</h3>
+                    <h2>Principe de construction</h2>
                     <br />
                     <p>
                         Dans la fabrication du mobilier, on crée (ou plutôt on redécouvre car déjà utilisé den Egypte Antique) un nouvel assemblage : « <b>la coupe d'onglet</b> »
@@ -176,7 +176,7 @@ export const RenaissanceFrançaise = () => {
                     </p>
                     <p>
                         On voit apparaître « <span className="tooltip" onMouseOver={() => {
-                        setFocus(<><FocusImg src={intarsia} alt="Intarsia image" /> <h3>Intarsia</h3>L'intarsia est un art consistant à incruster des pièces de bois sur un support de même matériau afin de créer des images par la juxtaposition des teintes de bois. Le mot intarsia vient du mot latin interserere qui signifie insérer. Cette technique apparaît en Europe au XVᵉ siècle pour la décoration des édifices religieux où le marbre était également utilisé</>)
+                        setFocus(<><FocusImg src={intarsia} alt="Intarsia image" /> <h2>Intarsia</h2><p>L'intarsia est un art consistant à incruster des pièces de bois sur un support de même matériau afin de créer des images par la juxtaposition des teintes de bois. Le mot intarsia vient du mot latin interserere qui signifie insérer. Cette technique apparaît en Europe au XVᵉ siècle pour la décoration des édifices religieux où le marbre était également utilisé.</p></>)
                         }}>l'intarsia</span> », technique d'incrustation. La <b>marqueterie</b> et la <b>dorure</b> apparaissent.
                     </p>
                     <br />
@@ -204,7 +204,7 @@ export const RenaissanceFrançaise = () => {
                         pays est avant tout un meuble sculpté.
                     </p>
                     <br />
-                    <h3>Les Meubles</h3>
+                    <h2>Les Meubles</h2>
                     <br />
                     <p>
                         Pour répondre à tous les usages, ils vont se
@@ -218,28 +218,28 @@ export const RenaissanceFrançaise = () => {
                     <ol>
                         <li>
                             <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={coffre} alt="coffre renaissance Française" /> <h3>Coffre</h3> Meuble qui reste essentiel, il est souvent constitué en façade d'un seul panneau, ce qui laisse au sculpteur une grande liberté de composition. Généralement ils sont surélevés par un socle important dont les pieds représentent des pattes de lion. </>)
+                                setFocus(<><FocusImg src={coffre} alt="coffre renaissance Française" /> <h2>Coffre</h2> <p>Meuble qui reste essentiel, il est souvent constitué en façade d'un seul panneau, ce qui laisse au sculpteur une grande liberté de composition. Généralement ils sont surélevés par un socle important dont les pieds représentent des pattes de lion. </p></>)
                             }}>Le Coffre</span>
                         </li>
                         <li>
                             <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={armoire} alt="Armoire renaissance Française" /> <h3>Armoire</h3> L'armoire Renaissance est composée essentiellement de deux corps. Quatre portes ou guichet et un fronton brisé. Le corps supérieur étant moins large et en retrait par rapport au corps du bas.</>)
+                                setFocus(<><FocusImg src={armoire} alt="Armoire renaissance Française" /> <h2>Armoire</h2> <p>L'armoire Renaissance est composée essentiellement de deux corps. Quatre portes ou guichet et un fronton brisé. Le corps supérieur étant moins large et en retrait par rapport au corps du bas.</p></>)
                             }}>L'armoire</span>
                         </li>
                         <li>
                             <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={dressoir} alt="Dressoir renaissance Française" /> <h3>Dressoir</h3> Il se compose d'un corps supérieur à deux ou trois portes et d'un étage inférieur sans
-                                porte et façade latérale. Il est destiné à présenter la vaisselle de prix.</>)
+                                setFocus(<><FocusImg src={dressoir} alt="Dressoir renaissance Française" /> <h2>Dressoir</h2> <p>Il se compose d'un corps supérieur à deux ou trois portes et d'un étage inférieur sans
+                                porte et façade latérale. Il est destiné à présenter la vaisselle de prix.</p></>)
                             }}>Le buffet ou dressoir</span>
                         </li>
                         <li>
                             <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={lit} alt="Lit renaissance Française" /> <h3>Lit</h3> Toujours de dimension très vaste, surmonté d'un baldaquin, maintenu par des colonnes appelées « Quenouilles », il est richement décoré.</>)
+                                setFocus(<><FocusImg src={lit} alt="Lit renaissance Française" /> <h2>Lit</h2> <p>Toujours de dimension très vaste, surmonté d'un baldaquin, maintenu par des colonnes appelées « Quenouilles », il est richement décoré.</p></>)
                             }}>Le lit</span>
                         </li>
                         <li>
                             <span className="tooltip" onMouseOver={() => {
-                                setFocus(<><FocusImg src={cabinet} alt="Cabinet renaissance Française" /> <h3>Cabinet</h3> Un nouveau meuble, mais qui n'est pas français. Importé d'Italie, d'Espagne et des Flandres. En réalité, c'est une petite armoire (coffre rehaussé sur des pieds et dans l'intérieur duquel on refermait les bijoux et objets précieux).</>)
+                                setFocus(<><FocusImg src={cabinet} alt="Cabinet renaissance Française" /> <h2>Cabinet</h2> <p>Un nouveau meuble, mais qui n'est pas français. Importé d'Italie, d'Espagne et des Flandres. En réalité, c'est une petite armoire (coffre rehaussé sur des pieds et dans l'intérieur duquel on refermait les bijoux et objets précieux).</p></>)
                             }}>Le Cabinet</span>
                         </li>
                     </ol>
